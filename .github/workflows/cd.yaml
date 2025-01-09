@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Build
         run: |
-          build_path=/web/${github.ref}
+          build_path=/web/${{ github.ref }}
           mkdir -p $build_path
           rm -rf $build_path/*
           godot --headless --verbose --export-release "Web" "$build_path/index.html"
