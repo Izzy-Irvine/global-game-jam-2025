@@ -1,0 +1,28 @@
+name: "godot-ci export"
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, reopened]
+
+
+jobs:
+  export-web:
+    name: build
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build
+        run: |
+          build_path=/web/${github.ref}
+          mkdir -p $build_path
+          rm -rf $build_path/*
+          godot --headless --verbose --export-release "Web" "$build_path/index.html"
+      # - name: Upload Artifact
+      #   uses: actions/upload-artifact@v4
+      #   if: github.ref == 'refs/heads/main'
+      #   with:
+      #     name: web
+      #     path: build/web
