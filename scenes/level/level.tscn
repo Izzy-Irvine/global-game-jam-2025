@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=6 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="Texture2D" uid="uid://uoxqnxqsxgrh" path="res://icon.svg" id="1_d1g14"]
 [ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
+[ext_resource type="Script" path="res://scenes/level/coin_jar.gd" id="3_iah4v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c33v4"]
 size = Vector2(128, 126)
@@ -55,3 +56,16 @@ text = "[color=red]Spoon"
 [node name="Item" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(976, 120)
 texture = ExtResource("1_d1g14")
+
+[node name="Coin Jar" type="Sprite2D" parent="."]
+position = Vector2(72, 72)
+texture = ExtResource("1_d1g14")
+script = ExtResource("3_iah4v")
+
+[node name="Label" type="Label" parent="Coin Jar"]
+offset_left = -64.0
+offset_top = 40.0
+offset_right = 64.0
+offset_bottom = 63.0
+text = "currency"
+horizontal_alignment = 1
