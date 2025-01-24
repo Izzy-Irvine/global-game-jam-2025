@@ -5,6 +5,7 @@ extends Node2D
 	set(v):
 		$Control/TextureRect.texture = v
 @export var costCents: int
+@export var type: Constants.item_type
 
 
 # Called when the node enters the scene tree for the first time.
