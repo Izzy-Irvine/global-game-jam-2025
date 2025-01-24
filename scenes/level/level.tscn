@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=3 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Texture2D" uid="uid://uoxqnxqsxgrh" path="res://icon.svg" id="1_d1g14"]
+[ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/item/item.tscn" id="2_roxsd"]
 
 [node name="Level" type="Node2D"]
 
@@ -38,3 +39,9 @@ offset_right = 118.0
 offset_bottom = 90.0
 bbcode_enabled = true
 text = "[color=red]Spoon"
+
+[node name="Item" parent="." instance=ExtResource("2_roxsd")]
+position = Vector2(893, 366)
+display_name = "Skibidi"
+texture = ExtResource("1_d1g14")
+costCents = 120
