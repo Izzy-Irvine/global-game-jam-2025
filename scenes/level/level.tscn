@@ -4,6 +4,37 @@
 
 [node name="Level" type="Node2D"]
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(572, 326)
+[node name="Cauldron" type="Sprite2D" parent="."]
+position = Vector2(589, 441)
 texture = ExtResource("1_d1g14")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Cauldron"]
+offset_left = -33.0
+offset_top = -31.0
+offset_right = 68.0
+offset_bottom = 9.0
+text = "Cauldron"
+
+[node name="Bar bottem" type="ColorRect" parent="."]
+offset_left = 6.0
+offset_top = 504.0
+offset_right = 1160.0
+offset_bottom = 648.0
+
+[node name="Bar top" type="ColorRect" parent="."]
+offset_top = 8.0
+offset_right = 1154.0
+offset_bottom = 152.0
+
+[node name="Spoon" type="ColorRect" parent="."]
+offset_left = 328.0
+offset_top = 408.0
+offset_right = 432.0
+offset_bottom = 502.0
+
+[node name="text" type="RichTextLabel" parent="Spoon"]
+layout_mode = 0
+offset_right = 118.0
+offset_bottom = 90.0
+bbcode_enabled = true
+text = "[color=red]Spoon"
