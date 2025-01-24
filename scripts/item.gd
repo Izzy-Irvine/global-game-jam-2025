@@ -5,7 +5,7 @@ extends Node
 @export var position: Vector2
 @export var cost: int
 @export var visible: bool
-
+@export var type: Constants.item_type
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
