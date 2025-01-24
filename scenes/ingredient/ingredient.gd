@@ -10,7 +10,7 @@ var draggable = false
 var starting_position: Vector2
 
 func _ready() -> void:
-	$Control.tooltip_text = display_name + ". $%.2f" % (costCents / 100)
+	$Control.tooltip_text = display_name + ". $%.2f" % (costCents / 100.0)
 	$Control/TextureRect.texture = texture
 	starting_position = position
 	
@@ -24,8 +24,9 @@ func _process(delta: float) -> void:
 	elif Globals.is_dragging:
 		Globals.is_dragging = false
 		position = starting_position
-		if Globals.cauldron_area2d in $Area2D.get_overlapping_areas():
+		if Globals.cauldron_area2d in $Area2D.get_overlapping_areas() and Globals.currency >= costCents:
 			Globals.current_potion_ingredients.append(self)
+			Globals.currency -= costCents
 
 
 func _on_control_mouse_entered() -> void:

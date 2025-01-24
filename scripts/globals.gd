@@ -8,7 +8,7 @@ enum item_type {
 	WATER
 }
 
-var currency: int = 0:
+var currency: int = 1000: # in cents
 	set(value):
 		currency = max(0, value)
 		currency_updated.emit()
