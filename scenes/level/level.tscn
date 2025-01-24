@@ -1,9 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=5 format=3 uid="uid://buxur252gmntr"]
 
+[ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="Texture2D" uid="uid://uoxqnxqsxgrh" path="res://icon.svg" id="1_d1g14"]
-[ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/item/item.tscn" id="2_roxsd"]
+[ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c33v4"]
+size = Vector2(128, 126)
 
 [node name="Level" type="Node2D"]
+script = ExtResource("1_byejp")
+
+[node name="Bar bottem" type="ColorRect" parent="."]
+offset_left = 6.0
+offset_top = 504.0
+offset_right = 1160.0
+offset_bottom = 648.0
+
+[node name="Bar top" type="ColorRect" parent="."]
+offset_left = -1.0
+offset_top = 3.0
+offset_right = 1153.0
+offset_bottom = 147.0
 
 [node name="Cauldron" type="Sprite2D" parent="."]
 position = Vector2(589, 441)
@@ -16,16 +33,11 @@ offset_right = 68.0
 offset_bottom = 9.0
 text = "Cauldron"
 
-[node name="Bar bottem" type="ColorRect" parent="."]
-offset_left = 6.0
-offset_top = 504.0
-offset_right = 1160.0
-offset_bottom = 648.0
+[node name="Area2D" type="Area2D" parent="Cauldron"]
 
-[node name="Bar top" type="ColorRect" parent="."]
-offset_top = 8.0
-offset_right = 1154.0
-offset_bottom = 152.0
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cauldron/Area2D"]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_c33v4")
 
 [node name="Spoon" type="ColorRect" parent="."]
 offset_left = 328.0
@@ -40,8 +52,6 @@ offset_bottom = 90.0
 bbcode_enabled = true
 text = "[color=red]Spoon"
 
-[node name="Item" parent="." instance=ExtResource("2_roxsd")]
-position = Vector2(893, 366)
-display_name = "Skibidi"
+[node name="Item" parent="." instance=ExtResource("2_2sfis")]
+position = Vector2(976, 120)
 texture = ExtResource("1_d1g14")
-costCents = 120
