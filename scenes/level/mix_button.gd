@@ -20,9 +20,9 @@ func mix(contents: Array):
 
 	# EXAMPLE MIX TYPE:
 	# fire and ice cancel each other out
-	if type_count[Constants.item_type.FIRE] > type_count[Constants.item_type.ICE]:
-		type_count[Constants.item_type.ICE] - type_count[Constants.item_type.FIRE]
-	elif type_count[Constants.item_type.ICE] > type_count[Constants.item_type.FIRE]:
-		type_count[Constants.item_type.FIRE] - type_count[Constants.item_type.ICE]
+	if type_count[Globals.item_type.FIRE] > type_count[Globals.item_type.ICE]:
+		type_count[Globals.item_type.ICE] - type_count[Globals.item_type.FIRE]
+	elif type_count[Globals.item_type.ICE] > type_count[Globals.item_type.FIRE]:
+		type_count[Globals.item_type.FIRE] - type_count[Globals.item_type.ICE]
 
 	return contents

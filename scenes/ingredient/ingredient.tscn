@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://clpee6c07otbj"]
+
+[ext_resource type="Script" path="res://scenes/ingredient/ingredient.gd" id="1_ghnyb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_46soa"]
+
+[node name="Item" type="Node2D"]
+script = ExtResource("1_ghnyb")
+display_name = "name"
+costCents = 120
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(2.5, 2.5)
+shape = SubResource("RectangleShape2D_46soa")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "name. $1.00"
+focus_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+
+[connection signal="mouse_entered" from="Control" to="." method="_on_control_mouse_entered"]
+[connection signal="mouse_exited" from="Control" to="." method="_on_control_mouse_exited"]
