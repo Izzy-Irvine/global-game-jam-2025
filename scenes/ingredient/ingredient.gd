@@ -7,6 +7,7 @@ static var item_dragged = null
 static var cauldron_area2d: Area2D
 
 @export var texture: Texture2D
+@export var hover_texture: Texture2D
 @export var costCents: int
 
 var is_mouse_hovering = false
@@ -35,7 +36,10 @@ func _process(delta: float) -> void:
 
 func _on_control_mouse_entered() -> void:
 	is_mouse_hovering = true
+	if hover_texture != null:
+		$Control/TextureRect.texture = hover_texture
 
 
 func _on_control_mouse_exited() -> void:
 	is_mouse_hovering = false
+	$Control/TextureRect.texture = texture
