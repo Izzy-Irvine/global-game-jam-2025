@@ -58,6 +58,7 @@ func mix():
 				break
 		if not missing_ingredient:
 			print(recipes[recipe])
+			current_potion_ingredients.clear()
 			return
 		
 	
