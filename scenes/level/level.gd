@@ -1,5 +1,7 @@
 extends Node2D
 
+const Drink = preload("res://scenes/level/drink.gd")
+
 var currency: int = 2000: # in cents
 	set(value):
 		currency = value
@@ -25,26 +27,41 @@ func _on_add_to_cauldron(target: Ingredient):
 	currency -= target.costCents
 	current_potion_ingredients.append(target)
 	print("Added: " + target.name)
-	
+
 
 @onready
 var recipes = {
-	[$Egg, $Ice]: "Egg on the Rocks",
-	[$Whisky, $"Lemon Juice", $"Sugar Cube", $"Orange Peel"]: "Whiskey Sour",
-	[$Whisky, $Bitters, $"Sugar Cube", $"Orange Peel"]: "Old Fashioned",
-	[$Rum, $"Mint leaf", $"Sugar Cube", $"Soda Water"]: "Mojito",
-	[$"Fey wine (secretly Prosecco)", $"Elixir of clarity (secretly vodka)"]: "Clarity potion",
-	[$Whisky, $"Fey wine (secretly Prosecco)", $Bitters, $"Starleaf Bitters", $Cherry]: "Mana-hattan",
-	[$Rum, $"Lemon Juice", $"Sugar Cube", $"Lemon Peel"]: "Daiquiri",
-	[$"Elixir of clarity (secretly vodka)", $"Mint leaf", $"Ginger Beer"]: "FrostHaven Mule",
-	[$"Liquid sunlight (secretly Tequila)", $"Elixir of clarity (secretly vodka)", $Rum, $"Orange Juice", $"Lime Juice", $"Orange Peel", $Cherry]: "Sirens Sunrise",
-	[$Whisky, $"Starleaf Bitters", $"Sugar Cube"]: "Astral mint",
-	[$Rum, $"Elixir of clarity (secretly vodka)", $"Liquid sunlight (secretly Tequila)", $"Starleaf Bitters", $"Orange liqueur", $"Liquid moonlight (secretly Gin)", $Ice, $Cola]: "Astral Island",
-	[$"Orange liqueur", $"Fey wine (secretly Prosecco)", $Ice]: "Fey Summer Spritz",
-	[$"Fey wine (secretly Prosecco)", $"Liquid sunlight (secretly Tequila)"]: "Sunlight Spritz",
-	[$"Fey wine (secretly Prosecco)", $"Liquid moonlight (secretly Gin)"]: "Moonlight Spritz",
-	[$"Starleaf Bitters", $"Fey wine (secretly Prosecco)"]: "Starlight spritz",
-	[$"Liquid moonlight (secretly Gin)", $Egg, $"Lemon Juice", $"Lemon Peel"]: "Moonlight fizz"	
+	[$Egg, $Ice]: Drink.new("Egg on the Rocks", 99999999),
+	[$Whisky, $"Lemon Juice", $"Sugar Cube", $"Orange Peel"]: 
+		Drink.new("Whiskey Sour", 1000),
+	[$Whisky, $Bitters, $"Sugar Cube", $"Orange Peel"]: 
+		Drink.new("Old Fashioned", 1000),
+	[$Rum, $"Mint leaf", $"Sugar Cube", $"Soda Water"]: 
+		Drink.new("Mojito", 1000),
+	[$"Fey wine (secretly Prosecco)", $"Elixir of clarity (secretly vodka)"]: 
+		Drink.new("Clarity potion", 1000),
+	[$Whisky, $"Fey wine (secretly Prosecco)", $Bitters, $"Starleaf Bitters", $Cherry]: 
+		Drink.new("Mana-hattan", 1000),
+	[$Rum, $"Lemon Juice", $"Sugar Cube", $"Lemon Peel"]: 
+		Drink.new("Daiquiri", 1000),
+	[$"Elixir of clarity (secretly vodka)", $"Mint leaf", $"Ginger Beer"]: 
+		Drink.new("FrostHaven Mule", 1000),
+	[$"Liquid sunlight (secretly Tequila)", $"Elixir of clarity (secretly vodka)", $Rum, $"Orange Juice", $"Lime Juice", $"Orange Peel", $Cherry]: 
+		Drink.new("Sirens Sunrise", 1000),
+	[$Whisky, $"Starleaf Bitters", $"Sugar Cube"]: 
+		Drink.new("Astral mint", 1000),
+	[$Rum, $"Elixir of clarity (secretly vodka)", $"Liquid sunlight (secretly Tequila)", $"Starleaf Bitters", $"Orange liqueur", $"Liquid moonlight (secretly Gin)", $Ice, $Cola]: 
+		Drink.new("Astral Island", 1000),
+	[$"Orange liqueur", $"Fey wine (secretly Prosecco)", $Ice]: 
+		Drink.new("Fey Summer Spritz", 1000),
+	[$"Fey wine (secretly Prosecco)", $"Liquid sunlight (secretly Tequila)"]: 
+		Drink.new("Sunlight Spritz", 1000),
+	[$"Fey wine (secretly Prosecco)", $"Liquid moonlight (secretly Gin)"]: 
+		Drink.new("Moonlight Spritz", 1000),
+	[$"Starleaf Bitters", $"Fey wine (secretly Prosecco)"]: 
+		Drink.new("Starlight spritz", 1000),
+	[$"Liquid moonlight (secretly Gin)", $Egg, $"Lemon Juice", $"Lemon Peel"]: 
+		Drink.new("Moonlight fizz", 1000)	
 }
 
 func mix():
