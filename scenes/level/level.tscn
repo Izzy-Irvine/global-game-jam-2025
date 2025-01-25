@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=35 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="Texture2D" uid="uid://uoxqnxqsxgrh" path="res://icon.svg" id="1_d1g14"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://scenes/level/spoon.gd" id="3_h6y4k"]
 [ext_resource type="Script" path="res://scenes/level/coin_jar.gd" id="3_iah4v"]
 [ext_resource type="Texture2D" uid="uid://df5vat3lt5402" path="res://scenes/level/CoinJarFull1.png" id="4_g6kxe"]
+[ext_resource type="Texture2D" uid="uid://ddml8wqeb51dd" path="res://scenes/level/culdren.png" id="4_k48wi"]
 [ext_resource type="Texture2D" uid="uid://b8xwp5atdpycn" path="res://scenes/level/Egg1.png" id="6_vyaxp"]
 [ext_resource type="Texture2D" uid="uid://jb3qkrcwvm50" path="res://scenes/level/Ice1.png" id="8_fji6e"]
 [ext_resource type="Texture2D" uid="uid://b8yrss00sf05h" path="res://scenes/level/Egg2.png" id="8_vpbv1"]
@@ -20,13 +21,21 @@
 [ext_resource type="Texture2D" uid="uid://bjx1khyded0n1" path="res://scenes/level/lemon.png" id="14_obxvk"]
 [ext_resource type="Texture2D" uid="uid://75ndwv6pyb8d" path="res://scenes/level/lime.png" id="15_hv44i"]
 [ext_resource type="Texture2D" uid="uid://dirxa8e6blepo" path="res://scenes/level/orange.png" id="16_u7h24"]
+[ext_resource type="Texture2D" uid="uid://bc6ehpjn2ay5l" path="res://scenes/level/Sugar cube.png" id="17_3lfpp"]
 [ext_resource type="Texture2D" uid="uid://cgvvr1p07b0mt" path="res://scenes/level/GingerBeer1.png" id="17_homn5"]
 [ext_resource type="Texture2D" uid="uid://bb35fulcbmrvs" path="res://scenes/level/GingerBeer2.png" id="18_jn32j"]
 [ext_resource type="Texture2D" uid="uid://5a7hkber0r6c" path="res://scenes/level/LiquidSunlight1.png" id="21_e1oq8"]
 [ext_resource type="Texture2D" uid="uid://caswsjxwh682j" path="res://scenes/level/LiquidSunlight2.png" id="22_xp31x"]
+[ext_resource type="Texture2D" uid="uid://bgfe24mmh275d" path="res://scenes/level/whisky.png" id="23_1vjp5"]
+[ext_resource type="Texture2D" uid="uid://bqqwkl588rmvg" path="res://scenes/level/Bitters.png" id="24_iwff1"]
+[ext_resource type="Texture2D" uid="uid://dwd2hm18203ea" path="res://scenes/level/star leaf Bitters.png" id="25_rjr4d"]
+[ext_resource type="Texture2D" uid="uid://ckyxi0ap37mne" path="res://scenes/level/rum.png" id="26_0cjhe"]
+[ext_resource type="Texture2D" uid="uid://cvg40kelaohq6" path="res://scenes/level/fey wine.png" id="31_2mgv3"]
+[ext_resource type="Texture2D" uid="uid://bxg8puam3kfuq" path="res://scenes/level/Orange liqueur.png" id="32_twafk"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_c33v4"]
-size = Vector2(128, 127)
+[sub_resource type="CircleShape2D" id="CircleShape2D_68apu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vkxgl"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_byejp")
@@ -45,20 +54,22 @@ expand_mode = 1
 
 [node name="Cauldron" type="Sprite2D" parent="."]
 position = Vector2(589, 441)
-texture = ExtResource("1_d1g14")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Cauldron"]
-offset_left = -33.0
-offset_top = -31.0
-offset_right = 68.0
-offset_bottom = 9.0
-text = "Cauldron"
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_k48wi")
+region_enabled = true
+region_rect = Rect2(771, 615, 375, 291)
 
 [node name="Area2D" type="Area2D" parent="Cauldron"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cauldron/Area2D"]
-position = Vector2(0, -0.5)
-shape = SubResource("RectangleShape2D_c33v4")
+position = Vector2(4, 0)
+scale = Vector2(16, 12)
+shape = SubResource("CircleShape2D_68apu")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Cauldron/Area2D"]
+position = Vector2(2.69, -98.06)
+scale = Vector2(13.5, 5)
+shape = SubResource("CircleShape2D_vkxgl")
 
 [node name="Spoon" type="Button" parent="."]
 offset_left = 381.0
@@ -86,7 +97,7 @@ text = "currency"
 horizontal_alignment = 1
 
 [node name="Egg" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(154, 489)
+position = Vector2(256, 488)
 texture = ExtResource("6_vyaxp")
 hover_texture = ExtResource("8_vpbv1")
 costCents = 1000
@@ -118,8 +129,8 @@ texture = ExtResource("15_hv44i")
 costCents = 100
 
 [node name="Sugar Cube" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(659, 192)
-texture = ExtResource("1_d1g14")
+position = Vector2(184, 472)
+texture = ExtResource("17_3lfpp")
 costCents = 10
 
 [node name="Soda Water" parent="." instance=ExtResource("2_2sfis")]
@@ -141,23 +152,27 @@ hover_texture = ExtResource("12_xq8jx")
 costCents = 200
 
 [node name="Whisky" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(229, 480)
-texture = ExtResource("1_d1g14")
+position = Vector2(736, 440)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("23_1vjp5")
 costCents = 500
 
 [node name="Bitters" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(743, 503)
-texture = ExtResource("1_d1g14")
+position = Vector2(648, 184)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("24_iwff1")
 costCents = 600
 
 [node name="Starleaf Bitters" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(300, 481)
-texture = ExtResource("1_d1g14")
+position = Vector2(688, 184)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("25_rjr4d")
 costCents = 600
 
 [node name="Rum" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(424, 197)
-texture = ExtResource("1_d1g14")
+position = Vector2(288, 144)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("26_0cjhe")
 costCents = 500
 
 [node name="Elixir of clarity (secretly vodka)" parent="." instance=ExtResource("2_2sfis")]
@@ -174,18 +189,20 @@ hover_texture = ExtResource("22_xp31x")
 costCents = 550
 
 [node name="Liquid moonlight (secretly Gin)" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(295, 193)
+position = Vector2(104, 176)
 texture = ExtResource("1_d1g14")
 costCents = 550
 
 [node name="Fey wine (secretly Prosecco)" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(362, 193)
-texture = ExtResource("1_d1g14")
+position = Vector2(832, 424)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("31_2mgv3")
 costCents = 400
 
 [node name="Orange liqueur" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(827, 498)
-texture = ExtResource("1_d1g14")
+position = Vector2(376, 136)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("32_twafk")
 costCents = 600
 
 [connection signal="pressed" from="Spoon" to="Spoon" method="_on_pressed"]
