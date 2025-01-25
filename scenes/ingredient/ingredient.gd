@@ -9,6 +9,7 @@ static var cauldron_area2d: Area2D
 @export var texture: Texture2D
 @export var costCents: int
 
+var was_mouse_button_pressed := false
 var is_mouse_hovering = false
 var starting_position: Vector2
 
@@ -19,9 +20,10 @@ func _ready() -> void:
 	
 
 func _process(delta: float) -> void:
-		
-	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and item_dragged == null and is_mouse_hovering:
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and not was_mouse_button_pressed and item_dragged == null and is_mouse_hovering:
 		item_dragged = self
+		
+	was_mouse_button_pressed = Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT)
 	
 	if not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and item_dragged == self:
 		position = starting_position
