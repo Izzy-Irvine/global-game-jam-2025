@@ -2,7 +2,7 @@ extends Node
 
 signal currency_updated
 
-var currency: int = 1000: # in cents
+var currency: int = 2000: # in cents
 	set(value):
 		currency = max(0, value)
 		currency_updated.emit()
