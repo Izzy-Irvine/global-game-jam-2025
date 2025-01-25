@@ -156,6 +156,11 @@ position = Vector2(624, 584)
 texture = ExtResource("1_d1g14")
 costCents = 500
 
+[node name="Cherry" parent="." instance=ExtResource("2_2sfis")]
+position = Vector2(700, 584)
+texture = ExtResource("1_d1g14")
+costCents = 500
+
 [node name="Elixir of clarity (secretly vodka)" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(560, 568)
 scale = Vector2(0.35, 0.35)

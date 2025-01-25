@@ -30,13 +30,14 @@ func _on_add_to_cauldron(target: Ingredient):
 @onready
 var recipes = {
 	[$Egg, $Ice]: "Egg on the Rocks",
-	# TODO: Whiskey Sour. But I have a question about the ingredients first
+	[$Whisky, $"Lemon Juice", $"Sugar Cube", $"Orange Peel"]: "Whiskey Sour",
 	[$Whisky, $Bitters, $"Sugar Cube", $"Orange Peel"]: "Old Fashioned",
 	[$Rum, $"Mint leaf", $"Sugar Cube", $"Soda Water"]: "Mojito",
-	# TODO: Clarity potion. Mana-hattan. Issue with ingredients list
+	[$"Fey wine (secretly Prosecco)", $"Elixir of clarity (secretly vodka)"]: "Clarity potion",
+	[$Whisky, $"Fey wine (secretly Prosecco)", $Bitters, $"Starleaf Bitters", $Cherry]: "Mana-hattan",
 	[$Rum, $"Lemon Juice", $"Sugar Cube", $"Lemon Peel"]: "Daiquiri",
 	[$"Elixir of clarity (secretly vodka)", $"Mint leaf", $"Ginger Beer"]: "FrostHaven Mule",
-	#[$"Liquid sunlight (secretly Tequila)", $"Elixir of clarity (secretly vodka)", $Rum, $"Orange Juice", $"Lime Juice", $"Orange Peel"] # missing cherry. "Sirens Sunrise"
+	[$"Liquid sunlight (secretly Tequila)", $"Elixir of clarity (secretly vodka)", $Rum, $"Orange Juice", $"Lime Juice", $"Orange Peel", $Cherry]: "Sirens Sunrise",
 	[$Whisky, $"Starleaf Bitters", $"Sugar Cube"]: "Astral mint",
 	[$Rum, $"Elixir of clarity (secretly vodka)", $"Liquid sunlight (secretly Tequila)", $"Starleaf Bitters", $"Orange liqueur", $"Liquid moonlight (secretly Gin)", $Ice, $Cola]: "Astral Island",
 	[$"Orange liqueur", $"Fey wine (secretly Prosecco)", $Ice]: "Fey Summer Spritz",
