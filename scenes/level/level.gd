@@ -64,7 +64,20 @@ var recipes = {
 		Drink.new("Moonlight fizz", 1000)	
 }
 
+var coin_particle_script = load("res://scenes/level/coin_particles.gd")
+
+func create_sell_effect():
+	var coin_particles = Node2D.new()
+	coin_particles.script = coin_particle_script
+	coin_particles.target = $"Coin Jar"
+	coin_particles.particle_scene = preload("res://scenes/particles.tscn")
+	coin_particles.duration = 0.7
+	coin_particles.emit_interval = 0.033
+	coin_particles.global_position = $Cauldron.global_position
+	add_child(coin_particles)
+
 func mix():
+	create_sell_effect()
 	for recipe in recipes:
 		if not recipe.size() == current_potion_ingredients.size():
 			continue
