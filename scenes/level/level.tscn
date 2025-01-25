@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=16 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="Texture2D" uid="uid://uoxqnxqsxgrh" path="res://icon.svg" id="1_d1g14"]
@@ -8,9 +8,12 @@
 [ext_resource type="Texture2D" uid="uid://df5vat3lt5402" path="res://scenes/level/CoinJarFull1.png" id="4_g6kxe"]
 [ext_resource type="Texture2D" uid="uid://b8xwp5atdpycn" path="res://scenes/level/Egg1.png" id="6_vyaxp"]
 [ext_resource type="Texture2D" uid="uid://jb3qkrcwvm50" path="res://scenes/level/Ice1.png" id="8_fji6e"]
-[ext_resource type="Texture2D" uid="uid://cgvvr1p07b0mt" path="res://scenes/level/GingerBeer1.png" id="9_eay2l"]
+[ext_resource type="Texture2D" uid="uid://b8yrss00sf05h" path="res://scenes/level/Egg2.png" id="8_vpbv1"]
 [ext_resource type="Texture2D" uid="uid://dxy5n777emqsk" path="res://scenes/level/Cola1.png" id="9_up270"]
+[ext_resource type="Texture2D" uid="uid://c27q2edk2quft" path="res://scenes/level/Ice2.png" id="10_hwswy"]
 [ext_resource type="Texture2D" uid="uid://dfycu8cba2qj7" path="res://scenes/level/Vodka2.png" id="10_yqjt1"]
+[ext_resource type="Texture2D" uid="uid://cnvbfdnhlhkev" path="res://scenes/level/Cola2.png" id="12_xq8jx"]
+[ext_resource type="Texture2D" uid="uid://b6u88oriy128n" path="res://scenes/level/Vodka1.png" id="13_rajsc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c33v4"]
 size = Vector2(128, 127)
@@ -72,11 +75,13 @@ horizontal_alignment = 1
 [node name="Egg" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(952, 88)
 texture = ExtResource("6_vyaxp")
+hover_texture = ExtResource("8_vpbv1")
 costCents = 1000
 
 [node name="Ice" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(864, 72)
 texture = ExtResource("8_fji6e")
+hover_texture = ExtResource("10_hwswy")
 costCents = 10
 
 [node name="Mint leaf" parent="." instance=ExtResource("2_2sfis")]
@@ -125,15 +130,15 @@ texture = ExtResource("1_d1g14")
 costCents = 10
 
 [node name="Ginger Beer" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(200, 72)
-scale = Vector2(0.35, 0.35)
-texture = ExtResource("9_eay2l")
+position = Vector2(192, 80)
+texture = ExtResource("1_d1g14")
 costCents = 200
 
 [node name="Cola" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(1080, 72)
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("9_up270")
+hover_texture = ExtResource("12_xq8jx")
 costCents = 200
 
 [node name="Whisky" parent="." instance=ExtResource("2_2sfis")]
@@ -156,15 +161,11 @@ position = Vector2(624, 584)
 texture = ExtResource("1_d1g14")
 costCents = 500
 
-[node name="Cherry" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(700, 584)
-texture = ExtResource("1_d1g14")
-costCents = 500
-
 [node name="Elixir of clarity (secretly vodka)" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(560, 568)
 scale = Vector2(0.35, 0.35)
-texture = ExtResource("10_yqjt1")
+texture = ExtResource("13_rajsc")
+hover_texture = ExtResource("10_yqjt1")
 costCents = 400
 
 [node name="Liquid sunlight (secretly Tequila)" parent="." instance=ExtResource("2_2sfis")]
