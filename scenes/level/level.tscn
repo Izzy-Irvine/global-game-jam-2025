@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=13 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="Texture2D" uid="uid://uoxqnxqsxgrh" path="res://icon.svg" id="1_d1g14"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://df5vat3lt5402" path="res://scenes/level/CoinJarFull1.png" id="4_g6kxe"]
 [ext_resource type="Texture2D" uid="uid://b8xwp5atdpycn" path="res://scenes/level/Egg1.png" id="6_vyaxp"]
 [ext_resource type="Texture2D" uid="uid://jb3qkrcwvm50" path="res://scenes/level/Ice1.png" id="8_fji6e"]
+[ext_resource type="Texture2D" uid="uid://cgvvr1p07b0mt" path="res://scenes/level/GingerBeer1.png" id="9_eay2l"]
 [ext_resource type="Texture2D" uid="uid://dxy5n777emqsk" path="res://scenes/level/Cola1.png" id="9_up270"]
 [ext_resource type="Texture2D" uid="uid://dfycu8cba2qj7" path="res://scenes/level/Vodka2.png" id="10_yqjt1"]
 
@@ -124,8 +125,9 @@ texture = ExtResource("1_d1g14")
 costCents = 10
 
 [node name="Ginger Beer" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(192, 80)
-texture = ExtResource("1_d1g14")
+position = Vector2(200, 72)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("9_eay2l")
 costCents = 200
 
 [node name="Cola" parent="." instance=ExtResource("2_2sfis")]
