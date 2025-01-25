@@ -31,18 +31,6 @@ func _process(delta: float) -> void:
 	
 	if item_dragged == self:
 		position = get_viewport().get_mouse_position()
-		
-		
-	#if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
-		#print(name + " is dragging")
-		#is_dragging = true
-		#position = get_viewport().get_mouse_position()
-	#elif is_dragging:
-		#is_dragging = false
-		#print(name + " is not dragging")
-		#position = starting_position
-		#if cauldron_area2d in $Area2D.get_overlapping_areas():
-			#add_to_cauldron.emit(self)
 
 
 func _on_control_mouse_entered() -> void:
