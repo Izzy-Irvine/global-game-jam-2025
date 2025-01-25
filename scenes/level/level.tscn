@@ -1,10 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=11 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="Texture2D" uid="uid://uoxqnxqsxgrh" path="res://icon.svg" id="1_d1g14"]
 [ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
 [ext_resource type="Script" path="res://scenes/level/spoon.gd" id="3_h6y4k"]
 [ext_resource type="Script" path="res://scenes/level/coin_jar.gd" id="3_iah4v"]
+[ext_resource type="Texture2D" uid="uid://df5vat3lt5402" path="res://scenes/level/CoinJarFull1.png" id="4_g6kxe"]
+[ext_resource type="Texture2D" uid="uid://b8xwp5atdpycn" path="res://scenes/level/Egg1.png" id="6_vyaxp"]
+[ext_resource type="Texture2D" uid="uid://b6u88oriy128n" path="res://scenes/level/Vodka1.png" id="8_dj30h"]
+[ext_resource type="Texture2D" uid="uid://jb3qkrcwvm50" path="res://scenes/level/Ice1.png" id="8_fji6e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c33v4"]
 size = Vector2(128, 127)
@@ -51,26 +55,29 @@ BUTTON"
 script = ExtResource("3_h6y4k")
 
 [node name="Coin Jar" type="Sprite2D" parent="."]
-position = Vector2(72, 72)
-texture = ExtResource("1_d1g14")
+position = Vector2(64, 72)
+scale = Vector2(0.449288, 0.449288)
+texture = ExtResource("4_g6kxe")
 script = ExtResource("3_iah4v")
 
 [node name="Label" type="Label" parent="Coin Jar"]
-offset_left = -64.0
-offset_top = 40.0
-offset_right = 64.0
-offset_bottom = 63.0
+offset_left = -71.2238
+offset_top = 124.642
+offset_right = 64.7762
+offset_bottom = 169.642
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
 text = "currency"
 horizontal_alignment = 1
 
 [node name="Egg" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(974, 103)
-texture = ExtResource("1_d1g14")
+texture = ExtResource("6_vyaxp")
 costCents = 1000
 
 [node name="Ice" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(896, 120)
-texture = ExtResource("1_d1g14")
+texture = ExtResource("8_fji6e")
 costCents = 10
 
 [node name="Mint leaf" parent="." instance=ExtResource("2_2sfis")]
@@ -150,7 +157,7 @@ costCents = 500
 
 [node name="Elixir of clarity (secretly vodka)" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(628, 601)
-texture = ExtResource("1_d1g14")
+texture = ExtResource("8_dj30h")
 costCents = 400
 
 [node name="Liquid sunlight (secretly Tequila)" parent="." instance=ExtResource("2_2sfis")]

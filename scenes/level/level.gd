@@ -1,17 +1,33 @@
 extends Node2D
 
+var currency: int = 2000: # in cents
+	set(value):
+		currency = value
+		$"Coin Jar".update_currency(currency)
+
+var current_potion_ingredients: Array
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Globals.cauldron_area2d = $Cauldron/Area2D
+	$"Coin Jar".update_currency(currency)
+	
+	for child in get_children():
+		if is_instance_of(child, Ingredient):
+			(child as Ingredient).add_to_cauldron.connect(_on_add_to_cauldron)
+	
+	Ingredient.cauldron_area2d = $Cauldron/Area2D
 	$Spoon.mix_button_pressed.connect(mix)
 
+func _on_add_to_cauldron(target: Ingredient):
+	if currency < target.costCents:
+		return
+	
+	currency -= target.costCents
+	current_potion_ingredients.append(target)
+	print("Added: " + target.name)
+	
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-
+@onready
 var recipes = {
 	[$Egg, $Ice]: "Egg on the Rocks",
 	# TODO: Whiskey Sour. But I have a question about the ingredients first
@@ -32,11 +48,16 @@ var recipes = {
 
 func mix():
 	for recipe in recipes:
-		if not recipe.size() == Globals.current_potion_ingredients.size():
+		if not recipe.size() == current_potion_ingredients.size():
 			continue
-		for ingredient in Globals.current_potion_ingredients:
-			if ingredient not in recipe:
-				continue
-		print(recipes[recipe])
+		var missing_ingredient := false
+		for ingredient in recipe:
+			if ingredient not in current_potion_ingredients:
+				missing_ingredient = true
+				break
+		if not missing_ingredient:
+			print(recipes[recipe])
+			return
+		
 	
 	# Can't find a recipe, so generate one

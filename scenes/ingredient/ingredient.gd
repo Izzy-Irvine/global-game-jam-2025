@@ -1,10 +1,15 @@
 @tool
-extends Node2D
+class_name Ingredient extends Node2D
+
+signal add_to_cauldron(target: Ingredient)
+
+static var item_dragged = null
+static var cauldron_area2d: Area2D
 
 @export var texture: Texture2D
 @export var costCents: int
 
-var draggable = false
+var is_mouse_hovering = false
 var starting_position: Vector2
 
 func _ready() -> void:
@@ -14,25 +19,23 @@ func _ready() -> void:
 	
 
 func _process(delta: float) -> void:
-	if not draggable:
-		return
-	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
-		Globals.is_dragging = true
-		position = get_viewport().get_mouse_position()
-	elif Globals.is_dragging:
-		Globals.is_dragging = false
+		
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and item_dragged == null and is_mouse_hovering:
+		item_dragged = self
+	
+	if not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and item_dragged == self:
 		position = starting_position
-		if Globals.cauldron_area2d in $Area2D.get_overlapping_areas() and Globals.currency >= costCents:
-			if self not in Globals.current_potion_ingredients:
-				Globals.current_potion_ingredients.append(self)
-			Globals.currency -= costCents
+		item_dragged = null
+		if cauldron_area2d in $Area2D.get_overlapping_areas():
+			add_to_cauldron.emit(self)
+	
+	if item_dragged == self:
+		position = get_viewport().get_mouse_position()
 
 
 func _on_control_mouse_entered() -> void:
-	if not Globals.is_dragging:
-		draggable = true
+	is_mouse_hovering = true
 
 
 func _on_control_mouse_exited() -> void:
-	if not Globals.is_dragging:
-		draggable = false
+	is_mouse_hovering = false
