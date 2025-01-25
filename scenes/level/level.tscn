@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=7 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="Texture2D" uid="uid://uoxqnxqsxgrh" path="res://icon.svg" id="1_d1g14"]
 [ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
+[ext_resource type="Script" path="res://scenes/level/spoon.gd" id="3_h6y4k"]
 [ext_resource type="Script" path="res://scenes/level/coin_jar.gd" id="3_iah4v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c33v4"]
@@ -40,21 +41,25 @@ text = "Cauldron"
 position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_c33v4")
 
-[node name="Spoon" type="ColorRect" parent="."]
+[node name="Spoon" type="Button" parent="."]
 offset_left = 328.0
 offset_top = 408.0
 offset_right = 432.0
 offset_bottom = 502.0
+text = "SPOON/MIX
+BUTTON"
+script = ExtResource("3_h6y4k")
 
-[node name="text" type="RichTextLabel" parent="Spoon"]
-layout_mode = 0
-offset_right = 118.0
-offset_bottom = 90.0
-bbcode_enabled = true
-text = "[color=red]Spoon"
-
-[node name="Item" parent="." instance=ExtResource("2_2sfis")]
+[node name="Egg" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(976, 120)
+texture = ExtResource("1_d1g14")
+
+[node name="Ice" parent="." instance=ExtResource("2_2sfis")]
+position = Vector2(896, 120)
+texture = ExtResource("1_d1g14")
+
+[node name="Lemon" parent="." instance=ExtResource("2_2sfis")]
+position = Vector2(832, 120)
 texture = ExtResource("1_d1g14")
 
 [node name="Coin Jar" type="Sprite2D" parent="."]
@@ -69,3 +74,5 @@ offset_right = 64.0
 offset_bottom = 63.0
 text = "currency"
 horizontal_alignment = 1
+
+[connection signal="pressed" from="Spoon" to="Spoon" method="_on_pressed"]
