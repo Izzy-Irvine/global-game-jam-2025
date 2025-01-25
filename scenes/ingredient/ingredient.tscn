@@ -5,6 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_46soa"]
 
 [node name="Item" type="Node2D"]
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_ghnyb")
 costCents = 120
 
