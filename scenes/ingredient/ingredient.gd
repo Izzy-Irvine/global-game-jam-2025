@@ -15,7 +15,7 @@ var is_mouse_hovering = false
 var starting_position: Vector2
 
 func _ready() -> void:
-	$Control.tooltip_text = name + ". $%.2f" % (costCents / 100.0)
+	$Control.tooltip_text = name + " ($%.2f)" % (costCents / 100.0)
 	$Control/TextureRect.texture = texture
 	starting_position = position
 	
