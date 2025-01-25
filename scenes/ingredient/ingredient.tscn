@@ -23,7 +23,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
-tooltip_text = "name. $1.20"
+tooltip_text = "Item. $1.20"
 focus_mode = 1
 
 [node name="TextureRect" type="TextureRect" parent="Control"]
@@ -39,7 +39,7 @@ offset_right = 25.0
 offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
-expand_mode = 1
+stretch_mode = 5
 
 [connection signal="mouse_entered" from="Control" to="." method="_on_control_mouse_entered"]
 [connection signal="mouse_exited" from="Control" to="." method="_on_control_mouse_exited"]
