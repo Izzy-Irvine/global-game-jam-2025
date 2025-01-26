@@ -9,13 +9,10 @@ var sell_price: int # in cents
 
 func _init(name: String, sell_price: int, texture: Texture2D=null, is_generic: bool=false, color: Color=Color.DARK_ORANGE) -> void:
 	self.name = name
-	self.texture = texture
+	if texture == null:
+		self.texture = generic_texture
+	else:
+		self.texture = texture
 	self.color = color
 	self.sell_price = sell_price
 	self.is_generic = is_generic
-
-func apply_to_sprite(sprite: TextureRect):
-	if texture == null:
-		sprite.texture = generic_texture
-	else:
-		sprite.texture = texture

@@ -10,13 +10,13 @@ config_version=5
 
 [application]
 
-config/name="Global Game Jam 2025"
+config/name="Bubble Bubble"
 run/main_scene="res://scenes/level/level.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="res://Loading.png"
 boot_splash/fullsize=false
-config/icon="res://icon.svg"
+config/icon="res://TabLogo.png"
 
 [display]
 
