@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://iwxowrwd72t4"
-path="res://.godot/imported/starlight Sprtitz.png-11fde71515100ef97f94faaeff5e7915.ctex"
+uid="uid://bi5hmnmnfqrfc"
+path="res://.godot/imported/starlight Sprtitz.png-d95baf3a2d1e82a58a6e6993f9b79b89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/level/starlight Sprtitz.png"
-dest_files=["res://.godot/imported/starlight Sprtitz.png-11fde71515100ef97f94faaeff5e7915.ctex"]
+source_file="res://starlight Sprtitz.png"
+dest_files=["res://.godot/imported/starlight Sprtitz.png-d95baf3a2d1e82a58a6e6993f9b79b89.ctex"]
 
 [params]
 

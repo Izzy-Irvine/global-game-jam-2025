@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjv38h1wwyext"
-path="res://.godot/imported/Fey Summer Spritz.png-0fb314761ac66b8a513413330647da99.ctex"
+uid="uid://dfq3r8cgdkgb5"
+path="res://.godot/imported/Fey Summer Spritz.png-44695a78e121bcaf2b1bae302d509aef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/level/Fey Summer Spritz.png"
-dest_files=["res://.godot/imported/Fey Summer Spritz.png-0fb314761ac66b8a513413330647da99.ctex"]
+source_file="res://Fey Summer Spritz.png"
+dest_files=["res://.godot/imported/Fey Summer Spritz.png-44695a78e121bcaf2b1bae302d509aef.ctex"]
 
 [params]
 
