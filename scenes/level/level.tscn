@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=53 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
@@ -45,7 +45,6 @@
 [ext_resource type="Texture2D" uid="uid://cuopjh84bbxq4" path="res://scenes/level/Bubble4.png" id="36_ckj3a"]
 [ext_resource type="Texture2D" uid="uid://c4x8xm0ahlsh7" path="res://scenes/ingredient/assets/fey wine_2.png" id="39_jcowq"]
 [ext_resource type="Texture2D" uid="uid://bahtteih64stm" path="res://scenes/ingredient/assets/Orange liqueur_2.png" id="41_36rdi"]
-[ext_resource type="Texture2D" uid="uid://cmaptof074532" path="res://scenes/level/drink-assets/rocks glass.png" id="44_xl6gb"]
 [ext_resource type="Texture2D" uid="uid://cavo0liya2lq5" path="res://scenes/level/drink-assets/moongin 2.png" id="41_yibhr"]
 [ext_resource type="Texture2D" uid="uid://cmaptof074532" path="res://scenes/level/drink-assets/rocks glass.png" id="44_xl6gb"]
 
