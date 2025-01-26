@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=55 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://dxy5n777emqsk" path="res://scenes/ingredient/assets/Cola1.png" id="9_up270"]
 [ext_resource type="Texture2D" uid="uid://c27q2edk2quft" path="res://scenes/ingredient/assets/Ice2.png" id="10_hwswy"]
 [ext_resource type="Texture2D" uid="uid://dfycu8cba2qj7" path="res://scenes/ingredient/assets/Vodka2.png" id="10_yqjt1"]
+[ext_resource type="Texture2D" uid="uid://nwemi4qqqgf" path="res://scenes/level/CoinJarMedium1.png" id="11_2q42o"]
 [ext_resource type="Texture2D" uid="uid://cnvbfdnhlhkev" path="res://scenes/ingredient/assets/Cola2.png" id="12_xq8jx"]
 [ext_resource type="Texture2D" uid="uid://donmyee50djaq" path="res://scenes/ingredient/assets/mint.png" id="13_bk6r5"]
 [ext_resource type="Texture2D" uid="uid://b6u88oriy128n" path="res://scenes/ingredient/assets/Vodka1.png" id="13_rajsc"]
@@ -74,6 +75,20 @@ animations = [{
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ckxfq"]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_7b57u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_2q42o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_g6kxe")
+}],
+"loop": false,
+"name": &"default",
+"speed": 0.0
+}]
+
 [sub_resource type="LabelSettings" id="LabelSettings_21466"]
 font_size = 45
 
@@ -132,18 +147,20 @@ icon = ExtResource("5_q6lqk")
 flat = true
 script = ExtResource("3_h6y4k")
 
-[node name="Coin Jar" type="Sprite2D" parent="."]
+[node name="Coin Jar" type="AnimatedSprite2D" parent="."]
 position = Vector2(81, 325)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("4_g6kxe")
+sprite_frames = SubResource("SpriteFrames_7b57u")
 script = ExtResource("3_iah4v")
 
 [node name="Label" type="Label" parent="Coin Jar"]
 offset_left = -82.0
-offset_top = 38.0
+offset_top = 15.0
 offset_right = 87.0
-offset_bottom = 83.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 32
 text = "currency"
 horizontal_alignment = 1
