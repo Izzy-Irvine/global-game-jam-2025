@@ -1,7 +1,6 @@
 [gd_scene load_steps=42 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
-[ext_resource type="Texture2D" uid="uid://uoxqnxqsxgrh" path="res://icon.svg" id="1_d1g14"]
 [ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
 [ext_resource type="Texture2D" uid="uid://d0ei5wy4u068c" path="res://scenes/level/background.png" id="2_jkmo4"]
 [ext_resource type="Texture2D" uid="uid://dpa1syhh40ohx" path="res://scenes/level/foreground.png" id="3_ax43m"]
@@ -9,6 +8,7 @@
 [ext_resource type="Script" path="res://scenes/level/coin_jar.gd" id="3_iah4v"]
 [ext_resource type="Texture2D" uid="uid://df5vat3lt5402" path="res://scenes/level/CoinJarFull1.png" id="4_g6kxe"]
 [ext_resource type="Texture2D" uid="uid://ddml8wqeb51dd" path="res://scenes/level/culdren.png" id="4_k48wi"]
+[ext_resource type="Texture2D" uid="uid://bxc0rnny0y27q" path="res://scenes/level/spoon.png" id="5_q6lqk"]
 [ext_resource type="Texture2D" uid="uid://b8xwp5atdpycn" path="res://scenes/level/Egg1.png" id="6_vyaxp"]
 [ext_resource type="Texture2D" uid="uid://jb3qkrcwvm50" path="res://scenes/level/Ice1.png" id="8_fji6e"]
 [ext_resource type="Texture2D" uid="uid://b8yrss00sf05h" path="res://scenes/level/Egg2.png" id="8_vpbv1"]
@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://bc6ehpjn2ay5l" path="res://scenes/level/Sugar cube.png" id="17_3lfpp"]
 [ext_resource type="Texture2D" uid="uid://cgvvr1p07b0mt" path="res://scenes/level/GingerBeer1.png" id="17_homn5"]
 [ext_resource type="Texture2D" uid="uid://bb35fulcbmrvs" path="res://scenes/level/GingerBeer2.png" id="18_jn32j"]
+[ext_resource type="Texture2D" uid="uid://cibvwsxfbwwdv" path="res://scenes/level/cherry.png" id="19_wdam0"]
 [ext_resource type="Texture2D" uid="uid://5a7hkber0r6c" path="res://scenes/level/LiquidSunlight1.png" id="21_e1oq8"]
 [ext_resource type="Texture2D" uid="uid://caswsjxwh682j" path="res://scenes/level/LiquidSunlight2.png" id="22_xp31x"]
 [ext_resource type="Texture2D" uid="uid://bgfe24mmh275d" path="res://scenes/level/whisky.png" id="23_1vjp5"]
@@ -38,6 +39,7 @@
 [ext_resource type="Texture2D" uid="uid://cjv38h1wwyext" path="res://scenes/level/Fey Summer Spritz.png" id="34_8rmm5"]
 [ext_resource type="Texture2D" uid="uid://baykojmwbqkdu" path="res://scenes/level/Bubble3.png" id="35_jma0r"]
 [ext_resource type="Texture2D" uid="uid://cuopjh84bbxq4" path="res://scenes/level/Bubble4.png" id="36_ckj3a"]
+[ext_resource type="Texture2D" uid="uid://dgp1i8lr16owt" path="res://scenes/level/starlight fizz.png" id="35_r612c"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_68apu"]
 
@@ -106,12 +108,14 @@ sprite_frames = SubResource("SpriteFrames_of3vd")
 frame_progress = 0.78298
 
 [node name="Spoon" type="Button" parent="."]
-offset_left = 381.0
-offset_top = 417.0
-offset_right = 485.0
-offset_bottom = 511.0
-text = "SPOON/MIX
-BUTTON"
+offset_left = 320.0
+offset_top = 477.0
+offset_right = 564.0
+offset_bottom = 953.0
+rotation = -1.06989
+scale = Vector2(0.35, 0.35)
+icon = ExtResource("5_q6lqk")
+flat = true
 script = ExtResource("3_h6y4k")
 
 [node name="Coin Jar" type="Sprite2D" parent="."]
@@ -167,9 +171,11 @@ position = Vector2(184, 472)
 texture = ExtResource("17_3lfpp")
 costCents = 10
 
-[node name="Soda Water" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(569, 191)
-texture = ExtResource("1_d1g14")
+[node name="Cherry" parent="." instance=ExtResource("2_2sfis")]
+position = Vector2(1098, 363)
+rotation = 0.366519
+scale = Vector2(0.285, 0.285)
+texture = ExtResource("19_wdam0")
 costCents = 10
 
 [node name="Ginger Beer" parent="." instance=ExtResource("2_2sfis")]
@@ -186,8 +192,8 @@ hover_texture = ExtResource("12_xq8jx")
 costCents = 200
 
 [node name="Whisky" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(736, 440)
-scale = Vector2(0.3, 0.3)
+position = Vector2(749, 413)
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("23_1vjp5")
 costCents = 500
 
@@ -204,8 +210,8 @@ texture = ExtResource("25_rjr4d")
 costCents = 600
 
 [node name="Rum" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(288, 144)
-scale = Vector2(0.3, 0.3)
+position = Vector2(303, 156)
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("26_0cjhe")
 costCents = 500
 
@@ -229,7 +235,7 @@ texture = ExtResource("31_qqc40")
 costCents = 550
 
 [node name="Fey wine (secretly Prosecco)" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(832, 424)
+position = Vector2(836, 423)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("31_2mgv3")
 costCents = 400
@@ -240,10 +246,21 @@ scale = Vector2(0.3, 0.3)
 texture = ExtResource("32_twafk")
 costCents = 600
 
-[node name="Drink" type="Sprite2D" parent="."]
+[node name="Drink" type="TextureRect" parent="."]
 visible = false
-position = Vector2(595, 391)
-scale = Vector2(0.381048, 0.381048)
-texture = ExtResource("34_8rmm5")
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 472.0
+offset_top = 325.0
+offset_right = 690.0
+offset_bottom = 536.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("35_r612c")
+expand_mode = 1
+stretch_mode = 5
 
 [connection signal="pressed" from="Spoon" to="Spoon" method="_on_pressed"]

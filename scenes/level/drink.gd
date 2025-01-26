@@ -14,7 +14,7 @@ func _init(name: String, sell_price: int, texture: Texture2D=null, is_generic: b
 	self.sell_price = sell_price
 	self.is_generic = is_generic
 
-func apply_to_sprite(sprite: Sprite2D):
+func apply_to_sprite(sprite: TextureRect):
 	if texture == null:
 		sprite.texture = generic_texture
 	else:
