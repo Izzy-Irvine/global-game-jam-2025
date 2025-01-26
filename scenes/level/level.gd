@@ -40,7 +40,7 @@ var recipes = {
 		Drink.new("Whiskey Sour", 1000, load("res://scenes/level/drink-assets/whisky sour.png")),
 	[$Whisky, $Bitters, $"Sugar Cube", $Orange]: 
 		Drink.new("Old Fashioned", 1000, load("res://scenes/level/drink-assets/old fashioned.png")),
-	[$Rum, $"Mint leaf", $"Sugar Cube"]: 
+	[$Rum, $"Mint Leaf", $"Sugar Cube"]: 
 		Drink.new("Mojito", 1000, load("res://scenes/level/drink-assets/Mojito.png")),
 	[$"Fey Wine", $"Elixir of Clarity"]: 
 		Drink.new("Clarity potion", 1000, load("res://scenes/level/drink-assets/Elixir of clarity .png")),
