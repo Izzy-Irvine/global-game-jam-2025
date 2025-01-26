@@ -85,8 +85,10 @@ func mix():
 		return
 	
 	var drink = get_drink()
-	drink.apply_to_sprite($Drink)
+	$Drink.texture = drink.texture
+	$"Drink Label".text = drink.name
 	$Cauldron.visible = false
+	$"Drink Label".visible = true
 	$Drink.visible = true
 	current_potion_ingredients.clear()
 	
@@ -98,6 +100,7 @@ func mix():
 	create_sell_effect()
 	$Cauldron.visible = true
 	$Drink.visible = false
+	$"Drink Label".visible = false
 
 
 func get_drink() -> Drink:

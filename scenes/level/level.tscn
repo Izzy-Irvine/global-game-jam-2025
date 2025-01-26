@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=48 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
@@ -67,6 +67,9 @@ animations = [{
 "name": &"default",
 "speed": 4.0
 }]
+
+[sub_resource type="LabelSettings" id="LabelSettings_21466"]
+font_size = 45
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_byejp")
@@ -252,6 +255,16 @@ position = Vector2(376, 136)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("32_twafk")
 costCents = 600
+
+[node name="Drink Label" type="Label" parent="."]
+visible = false
+offset_left = 217.0
+offset_top = 242.0
+offset_right = 932.0
+offset_bottom = 302.0
+text = "Drink name"
+label_settings = SubResource("LabelSettings_21466")
+horizontal_alignment = 1
 
 [node name="Drink" type="TextureRect" parent="."]
 visible = false
