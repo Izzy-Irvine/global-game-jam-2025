@@ -84,10 +84,8 @@ func mix():
 	if current_potion_ingredients.size() == 0:
 		return
 	
-	create_sell_effect()
 	var drink = get_drink()
 	drink.apply_to_sprite($Drink)
-	currency += drink.sell_price
 	$Cauldron.visible = false
 	$Drink.visible = true
 	current_potion_ingredients.clear()
@@ -95,6 +93,12 @@ func mix():
 	$Bubbles.hide()
 	$Bubbles.stop()
 	
+	await get_tree().create_timer(1.0).timeout
+	currency += drink.sell_price
+	create_sell_effect()
+	$Cauldron.visible = true
+	$Drink.visible = false
+
 
 func get_drink() -> Drink:
 	for recipe in recipes:
@@ -118,7 +122,3 @@ func get_drink() -> Drink:
 		sell_price += ingredient.costCents
 	sell_price *= 0.8
 	return Drink.new("Mundane Potion", sell_price, null, true)
-	
-	return null
-	
-	# Can't find a recipe, so generate one
