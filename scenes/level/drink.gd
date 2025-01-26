@@ -1,6 +1,6 @@
 class_name Drink extends Node
 
-static var generic_texture: Texture2D = load("res://scenes/level/Moonlight Fizz.png")
+static var generic_texture: Texture2D = load("res://scenes/level/Fill_rocks glass.png")
 
 var is_generic: bool
 var texture: Texture2D

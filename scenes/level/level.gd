@@ -87,6 +87,9 @@ func mix():
 	
 	var drink = get_drink()
 	$Drink.texture = drink.texture
+	if drink.is_generic:
+		$"Generic glass".visible = true
+		$Drink.modulate = drink.color
 	$"Drink Label".text = drink.name
 	$Cauldron.visible = false
 	$"Drink Label".visible = true
@@ -101,6 +104,8 @@ func mix():
 	create_sell_effect()
 	$Cauldron.visible = true
 	$Drink.visible = false
+	$Drink.modulate = Color.from_hsv(1.0, 1.0, 1.0)
+	$"Generic glass".visible = false
 	$"Drink Label".visible = false
 
 
@@ -125,4 +130,4 @@ func get_drink() -> Drink:
 	for ingredient in current_potion_ingredients:
 		sell_price += ingredient.costCents
 	sell_price *= 0.8
-	return Drink.new("Mundane Potion", sell_price, null, true)
+	return Drink.new("Mundane Potion", sell_price, null, true, $Bubbles.modulate)
