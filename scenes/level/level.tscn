@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=47 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
@@ -24,11 +24,15 @@
 [ext_resource type="Texture2D" uid="uid://bc6ehpjn2ay5l" path="res://scenes/level/Sugar cube.png" id="17_3lfpp"]
 [ext_resource type="Texture2D" uid="uid://cgvvr1p07b0mt" path="res://scenes/level/GingerBeer1.png" id="17_homn5"]
 [ext_resource type="Texture2D" uid="uid://bb35fulcbmrvs" path="res://scenes/level/GingerBeer2.png" id="18_jn32j"]
+[ext_resource type="Texture2D" uid="uid://cpdixvhieafi0" path="res://scenes/level/mint2.png" id="19_eabdl"]
 [ext_resource type="Texture2D" uid="uid://cibvwsxfbwwdv" path="res://scenes/level/cherry.png" id="19_wdam0"]
 [ext_resource type="Texture2D" uid="uid://5a7hkber0r6c" path="res://scenes/level/LiquidSunlight1.png" id="21_e1oq8"]
+[ext_resource type="Texture2D" uid="uid://c1ryd2khef834" path="res://scenes/level/lemon2.png" id="21_lhju0"]
 [ext_resource type="Texture2D" uid="uid://caswsjxwh682j" path="res://scenes/level/LiquidSunlight2.png" id="22_xp31x"]
 [ext_resource type="Texture2D" uid="uid://bgfe24mmh275d" path="res://scenes/level/whisky.png" id="23_1vjp5"]
+[ext_resource type="Texture2D" uid="uid://c6clsi2q1ck5h" path="res://scenes/level/orange2.png" id="23_skldu"]
 [ext_resource type="Texture2D" uid="uid://bqqwkl588rmvg" path="res://scenes/level/Bitters.png" id="24_iwff1"]
+[ext_resource type="Texture2D" uid="uid://cirdefk4flnbd" path="res://scenes/level/lime2.png" id="25_gx62g"]
 [ext_resource type="Texture2D" uid="uid://dwd2hm18203ea" path="res://scenes/level/star leaf Bitters.png" id="25_rjr4d"]
 [ext_resource type="Texture2D" uid="uid://ckyxi0ap37mne" path="res://scenes/level/rum.png" id="26_0cjhe"]
 [ext_resource type="Texture2D" uid="uid://cvg40kelaohq6" path="res://scenes/level/fey wine.png" id="31_2mgv3"]
@@ -148,21 +152,25 @@ costCents = 10
 [node name="Mint leaf" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(1012, 329)
 texture = ExtResource("13_bk6r5")
+hover_texture = ExtResource("19_eabdl")
 costCents = 50
 
 [node name="Lemon" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(1029, 450)
 texture = ExtResource("14_obxvk")
+hover_texture = ExtResource("21_lhju0")
 costCents = 50
 
 [node name="Orange" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(946, 443)
 texture = ExtResource("16_u7h24")
+hover_texture = ExtResource("23_skldu")
 costCents = 50
 
 [node name="Lime" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(984, 458)
 texture = ExtResource("15_hv44i")
+hover_texture = ExtResource("25_gx62g")
 costCents = 100
 
 [node name="Sugar Cube" parent="." instance=ExtResource("2_2sfis")]
