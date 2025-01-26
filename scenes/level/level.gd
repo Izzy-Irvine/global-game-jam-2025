@@ -27,6 +27,8 @@ func _on_add_to_cauldron(target: Ingredient):
 	currency -= target.costCents
 	current_potion_ingredients.append(target)
 	print("Added: " + target.name)
+	$Bubbles.show()
+	$Bubbles.play()
 
 
 @onready
@@ -89,6 +91,9 @@ func mix():
 	$Cauldron.visible = false
 	$Drink.visible = true
 	current_potion_ingredients.clear()
+	
+	$Bubbles.hide()
+	$Bubbles.stop()
 	
 
 func get_drink() -> Drink:
