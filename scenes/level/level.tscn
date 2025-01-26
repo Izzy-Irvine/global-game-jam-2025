@@ -21,7 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://bjx1khyded0n1" path="res://scenes/level/lemon.png" id="14_obxvk"]
 [ext_resource type="Texture2D" uid="uid://75ndwv6pyb8d" path="res://scenes/level/lime.png" id="15_hv44i"]
 [ext_resource type="Texture2D" uid="uid://dirxa8e6blepo" path="res://scenes/level/orange.png" id="16_u7h24"]
-[ext_resource type="Texture2D" uid="uid://bc6ehpjn2ay5l" path="res://scenes/level/Sugar cube.png" id="17_3lfpp"]
+[ext_resource type="Texture2D" uid="uid://6u2dm4es5w1e" path="res://scenes/level/Sugar cube.png" id="17_3lfpp"]
 [ext_resource type="Texture2D" uid="uid://cgvvr1p07b0mt" path="res://scenes/level/GingerBeer1.png" id="17_homn5"]
 [ext_resource type="Texture2D" uid="uid://bb35fulcbmrvs" path="res://scenes/level/GingerBeer2.png" id="18_jn32j"]
 [ext_resource type="Texture2D" uid="uid://cpdixvhieafi0" path="res://scenes/level/mint2.png" id="19_eabdl"]
@@ -31,9 +31,9 @@
 [ext_resource type="Texture2D" uid="uid://caswsjxwh682j" path="res://scenes/level/LiquidSunlight2.png" id="22_xp31x"]
 [ext_resource type="Texture2D" uid="uid://bgfe24mmh275d" path="res://scenes/level/whisky.png" id="23_1vjp5"]
 [ext_resource type="Texture2D" uid="uid://c6clsi2q1ck5h" path="res://scenes/level/orange2.png" id="23_skldu"]
-[ext_resource type="Texture2D" uid="uid://bqqwkl588rmvg" path="res://scenes/level/Bitters.png" id="24_iwff1"]
+[ext_resource type="Texture2D" uid="uid://dh6al34hu8h4y" path="res://scenes/level/Bitters.png" id="24_iwff1"]
 [ext_resource type="Texture2D" uid="uid://cirdefk4flnbd" path="res://scenes/level/lime2.png" id="25_gx62g"]
-[ext_resource type="Texture2D" uid="uid://dwd2hm18203ea" path="res://scenes/level/star leaf Bitters.png" id="25_rjr4d"]
+[ext_resource type="Texture2D" uid="uid://b1mpv654eypgt" path="res://scenes/level/star leaf Bitters.png" id="25_rjr4d"]
 [ext_resource type="Texture2D" uid="uid://ckyxi0ap37mne" path="res://scenes/level/rum.png" id="26_0cjhe"]
 [ext_resource type="Texture2D" uid="uid://cvg40kelaohq6" path="res://scenes/level/fey wine.png" id="31_2mgv3"]
 [ext_resource type="Texture2D" uid="uid://df50dpkd4xmnv" path="res://scenes/level/moongin.png" id="31_qqc40"]
@@ -105,6 +105,7 @@ shape = SubResource("CircleShape2D_vkxgl")
 
 [node name="Bubbles" type="AnimatedSprite2D" parent="."]
 visible = false
+modulate = Color(1, 0.5, 0.5, 1)
 position = Vector2(589, 415)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_of3vd")

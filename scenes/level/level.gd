@@ -29,6 +29,7 @@ func _on_add_to_cauldron(target: Ingredient):
 	print("Added: " + target.name)
 	$Bubbles.show()
 	$Bubbles.play()
+	$Bubbles.modulate = Color.from_hsv(randf(), 0.3, 1.00)
 
 
 @onready

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ympxn4dfxx28"
-path="res://.godot/imported/Sunlight Spritz.png-decd2ecb96f03a3e868d623564b5b3e3.ctex"
+path="res://.godot/imported/Sunlight Spritz.png-c5eb55b14842082214227140129f5faf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sunlight Spritz.png"
-dest_files=["res://.godot/imported/Sunlight Spritz.png-decd2ecb96f03a3e868d623564b5b3e3.ctex"]
+source_file="res://scenes/level/Sunlight Spritz.png"
+dest_files=["res://.godot/imported/Sunlight Spritz.png-c5eb55b14842082214227140129f5faf.ctex"]
 
 [params]
 
