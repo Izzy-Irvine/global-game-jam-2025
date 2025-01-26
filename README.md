@@ -33,7 +33,7 @@ Liquid Moonlight, Egg, Lemon: Moonlight fizz
 [Sophie Starkey (she/they)](https://github.com/sophiestarkey) - Full time developer \
 [AJ O'Dea (they/them)](https://github.com/AMothcreature) - Full time artist \
 [David (he/him)](https://github.com/Arrowskee) - Full time artist \
-[Sharlot (she/her)](https://github.com/sticks-stuff) - Part time developer \
+[Charlotte M (she/her)](https://github.com/sticks-stuff) - Part time developer \
 [Min Iles (she/they)](https://github.com/Tominne) - Part time artist
 
 Thank you all so much! Couldn't have done it without you :)
