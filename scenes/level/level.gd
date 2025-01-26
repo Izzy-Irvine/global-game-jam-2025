@@ -92,6 +92,9 @@ func mix():
 	$Drink.visible = true
 	current_potion_ingredients.clear()
 	
+	$Bubbles.hide()
+	$Bubbles.stop()
+	
 
 func get_drink() -> Drink:
 	for recipe in recipes:
@@ -119,6 +122,3 @@ func get_drink() -> Drink:
 	return null
 	
 	# Can't find a recipe, so generate one
-	
-	$Bubbles.hide()
-	$Bubbles.stop()

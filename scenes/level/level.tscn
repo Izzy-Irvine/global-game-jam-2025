@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=42 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="Texture2D" uid="uid://uoxqnxqsxgrh" path="res://icon.svg" id="1_d1g14"]
@@ -35,10 +35,9 @@
 [ext_resource type="Texture2D" uid="uid://bxg8puam3kfuq" path="res://scenes/level/Orange liqueur.png" id="32_twafk"]
 [ext_resource type="Texture2D" uid="uid://dldm4lj2yj4hl" path="res://scenes/level/Bubble1.png" id="33_mg06c"]
 [ext_resource type="Texture2D" uid="uid://18rntvvuymqy" path="res://scenes/level/Bubble2.png" id="34_2sryq"]
+[ext_resource type="Texture2D" uid="uid://cjv38h1wwyext" path="res://scenes/level/Fey Summer Spritz.png" id="34_8rmm5"]
 [ext_resource type="Texture2D" uid="uid://baykojmwbqkdu" path="res://scenes/level/Bubble3.png" id="35_jma0r"]
 [ext_resource type="Texture2D" uid="uid://cuopjh84bbxq4" path="res://scenes/level/Bubble4.png" id="36_ckj3a"]
-[ext_resource type="Texture2D" uid="uid://cjv38h1wwyext" path="res://scenes/level/Fey Summer Spritz.png" id="34_8rmm5"]
-
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_68apu"]
 
