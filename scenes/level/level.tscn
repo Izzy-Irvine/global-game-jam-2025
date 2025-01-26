@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=50 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
@@ -43,6 +43,7 @@
 [ext_resource type="Texture2D" uid="uid://baykojmwbqkdu" path="res://scenes/level/Bubble3.png" id="35_jma0r"]
 [ext_resource type="Texture2D" uid="uid://dgp1i8lr16owt" path="res://scenes/level/starlight fizz.png" id="35_r612c"]
 [ext_resource type="Texture2D" uid="uid://cuopjh84bbxq4" path="res://scenes/level/Bubble4.png" id="36_ckj3a"]
+[ext_resource type="Texture2D" uid="uid://cmaptof074532" path="res://scenes/level/rocks glass.png" id="44_xl6gb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_68apu"]
 
@@ -284,6 +285,23 @@ offset_bottom = 536.0
 grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("35_r612c")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Generic glass" type="TextureRect" parent="."]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 472.0
+offset_top = 325.0
+offset_right = 690.0
+offset_bottom = 536.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("44_xl6gb")
 expand_mode = 1
 stretch_mode = 5
 
