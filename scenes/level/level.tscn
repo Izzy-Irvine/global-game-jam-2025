@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=49 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
@@ -68,6 +68,8 @@ animations = [{
 "speed": 4.0
 }]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ckxfq"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_21466"]
 font_size = 45
 
@@ -121,6 +123,7 @@ offset_right = 564.0
 offset_bottom = 953.0
 rotation = -1.06989
 scale = Vector2(0.35, 0.35)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ckxfq")
 icon = ExtResource("5_q6lqk")
 flat = true
 script = ExtResource("3_h6y4k")
