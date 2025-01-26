@@ -34,27 +34,27 @@ func _on_add_to_cauldron(target: Ingredient):
 @onready
 var recipes = {
 	[$Egg, $Ice]: 
-		Drink.new("Egg on the Rocks", 99999999),
+		Drink.new("Egg on the Rocks", 99999999, load("res://scenes/level/Egg on the rocks.png")),
 	[$Whisky, $"Lemon Juice", $"Sugar Cube", $"Orange Peel"]: 
-		Drink.new("Whiskey Sour", 1000),
+		Drink.new("Whiskey Sour", 1000, load("res://scenes/level/whisky sour.png")),
 	[$Whisky, $Bitters, $"Sugar Cube", $"Orange Peel"]: 
-		Drink.new("Old Fashioned", 1000),
+		Drink.new("Old Fashioned", 1000, load("res://scenes/level/old fashioned.png")),
 	[$Rum, $"Mint leaf", $"Sugar Cube", $"Soda Water"]: 
-		Drink.new("Mojito", 1000),
+		Drink.new("Mojito", 1000, load("res://scenes/level/Mojito.png")),
 	[$"Fey wine (secretly Prosecco)", $"Elixir of clarity (secretly vodka)"]: 
-		Drink.new("Clarity potion", 1000),
+		Drink.new("Clarity potion", 1000, load("res://scenes/level/Elixir of clarity .png")),
 	[$Whisky, $"Fey wine (secretly Prosecco)", $Bitters, $"Starleaf Bitters", $Cherry]: 
-		Drink.new("Mana-hattan", 1000),
+		Drink.new("Mana-hattan", 1000, load("res://scenes/level/Mana-hattan.png")),
 	[$Rum, $"Lemon Juice", $"Sugar Cube", $"Lemon Peel"]: 
-		Drink.new("Daiquiri", 1000),
+		Drink.new("Daiquiri", 1000, load("res://scenes/level/Daiquiri.png")),
 	[$"Elixir of clarity (secretly vodka)", $"Mint leaf", $"Ginger Beer"]: 
-		Drink.new("FrostHaven Mule", 1000),
+		Drink.new("FrostHaven Mule", 1000, load("res://scenes/level/Frost Haven Mule.png")),
 	[$"Liquid sunlight (secretly Tequila)", $"Elixir of clarity (secretly vodka)", $Rum, $"Orange Juice", $"Lime Juice", $"Orange Peel", $Cherry]: 
-		Drink.new("Sirens Sunrise", 1000),
+		Drink.new("Sirens Sunrise", 1000, load("res://scenes/level/Sirens sunrise.png")),
 	[$Whisky, $"Starleaf Bitters", $"Sugar Cube"]: 
-		Drink.new("Astral mint", 1000),
+		Drink.new("Astral mint", 1000, load("res://scenes/level/Astral Old Fashioned.png")),
 	[$Rum, $"Elixir of clarity (secretly vodka)", $"Liquid sunlight (secretly Tequila)", $"Starleaf Bitters", $"Orange liqueur", $"Liquid moonlight (secretly Gin)", $Ice, $Cola]: 
-		Drink.new("Astral Island", 1000),
+		Drink.new("Astral Island", 1000, load("res://scenes/level/Astral Island.png")),
 	[$"Orange liqueur", $"Fey wine (secretly Prosecco)", $Ice]: 
 		Drink.new("Fey Summer Spritz", 1000, load("res://scenes/level/Fey Summer Spritz.png")),
 	[$"Fey wine (secretly Prosecco)", $"Liquid sunlight (secretly Tequila)"]: 
