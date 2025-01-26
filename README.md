@@ -7,7 +7,9 @@ The game is hosted at [https://global-jam-25.izzy.kiwi/](https://global-jam-25.i
 You can drag various ingredients into the cauldron. Each ingredient has a cost so you'll see your coin jar go down as you add things. To see the names and costs of ingredients, hover over them with your mouse.
 When you're ready, click the spoon to brew it into a potion. This will then get sold and hopefully you'll earn your money back. 
 
-### Recipes
+<details>
+<summary>Recipes</summary>
+
 Egg, Ice: Egg on the Rocks \
 Whisky, Lemon, Sugar Cube, Orange: Whiskey Sour \
 Whisky, Bitters, Sugar Cube, Orange: Old Fashioned \
@@ -24,6 +26,7 @@ Fey Wine, Liquid Sunlight: Sunlight Spritz \
 Fey Wine, Liquid Moonlight: Moonlight Spritz \
 Starleaf Bitters, Fey Wine: Starlight spritz \
 Liquid Moonlight, Egg, Lemon: Moonlight fizz
+</details>
 
 ## Credits
 [Izzy Irvine (they/them)](https://github.com/Izzy-Irvine) - Part time developer, part time team lead \
