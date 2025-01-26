@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=52 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
@@ -9,42 +9,45 @@
 [ext_resource type="Texture2D" uid="uid://df5vat3lt5402" path="res://scenes/level/CoinJarFull1.png" id="4_g6kxe"]
 [ext_resource type="Texture2D" uid="uid://ddml8wqeb51dd" path="res://scenes/level/culdren.png" id="4_k48wi"]
 [ext_resource type="Texture2D" uid="uid://bxc0rnny0y27q" path="res://scenes/level/spoon.png" id="5_q6lqk"]
-[ext_resource type="Texture2D" uid="uid://b8xwp5atdpycn" path="res://scenes/level/Egg1.png" id="6_vyaxp"]
-[ext_resource type="Texture2D" uid="uid://jb3qkrcwvm50" path="res://scenes/level/Ice1.png" id="8_fji6e"]
-[ext_resource type="Texture2D" uid="uid://b8yrss00sf05h" path="res://scenes/level/Egg2.png" id="8_vpbv1"]
-[ext_resource type="Texture2D" uid="uid://dxy5n777emqsk" path="res://scenes/level/Cola1.png" id="9_up270"]
-[ext_resource type="Texture2D" uid="uid://c27q2edk2quft" path="res://scenes/level/Ice2.png" id="10_hwswy"]
-[ext_resource type="Texture2D" uid="uid://dfycu8cba2qj7" path="res://scenes/level/Vodka2.png" id="10_yqjt1"]
-[ext_resource type="Texture2D" uid="uid://cnvbfdnhlhkev" path="res://scenes/level/Cola2.png" id="12_xq8jx"]
-[ext_resource type="Texture2D" uid="uid://donmyee50djaq" path="res://scenes/level/mint.png" id="13_bk6r5"]
-[ext_resource type="Texture2D" uid="uid://b6u88oriy128n" path="res://scenes/level/Vodka1.png" id="13_rajsc"]
-[ext_resource type="Texture2D" uid="uid://bjx1khyded0n1" path="res://scenes/level/lemon.png" id="14_obxvk"]
-[ext_resource type="Texture2D" uid="uid://75ndwv6pyb8d" path="res://scenes/level/lime.png" id="15_hv44i"]
-[ext_resource type="Texture2D" uid="uid://dirxa8e6blepo" path="res://scenes/level/orange.png" id="16_u7h24"]
-[ext_resource type="Texture2D" uid="uid://6u2dm4es5w1e" path="res://scenes/level/Sugar cube.png" id="17_3lfpp"]
-[ext_resource type="Texture2D" uid="uid://cgvvr1p07b0mt" path="res://scenes/level/GingerBeer1.png" id="17_homn5"]
-[ext_resource type="Texture2D" uid="uid://bb35fulcbmrvs" path="res://scenes/level/GingerBeer2.png" id="18_jn32j"]
-[ext_resource type="Texture2D" uid="uid://cpdixvhieafi0" path="res://scenes/level/mint2.png" id="19_eabdl"]
-[ext_resource type="Texture2D" uid="uid://cibvwsxfbwwdv" path="res://scenes/level/cherry.png" id="19_wdam0"]
-[ext_resource type="Texture2D" uid="uid://5a7hkber0r6c" path="res://scenes/level/LiquidSunlight1.png" id="21_e1oq8"]
-[ext_resource type="Texture2D" uid="uid://c1ryd2khef834" path="res://scenes/level/lemon2.png" id="21_lhju0"]
-[ext_resource type="Texture2D" uid="uid://caswsjxwh682j" path="res://scenes/level/LiquidSunlight2.png" id="22_xp31x"]
-[ext_resource type="Texture2D" uid="uid://bgfe24mmh275d" path="res://scenes/level/whisky.png" id="23_1vjp5"]
-[ext_resource type="Texture2D" uid="uid://c6clsi2q1ck5h" path="res://scenes/level/orange2.png" id="23_skldu"]
-[ext_resource type="Texture2D" uid="uid://dh6al34hu8h4y" path="res://scenes/level/Bitters.png" id="24_iwff1"]
-[ext_resource type="Texture2D" uid="uid://cirdefk4flnbd" path="res://scenes/level/lime2.png" id="25_gx62g"]
-[ext_resource type="Texture2D" uid="uid://b1mpv654eypgt" path="res://scenes/level/star leaf Bitters.png" id="25_rjr4d"]
-[ext_resource type="Texture2D" uid="uid://ckyxi0ap37mne" path="res://scenes/level/rum.png" id="26_0cjhe"]
-[ext_resource type="Texture2D" uid="uid://cvg40kelaohq6" path="res://scenes/level/fey wine.png" id="31_2mgv3"]
-[ext_resource type="Texture2D" uid="uid://df50dpkd4xmnv" path="res://scenes/level/moongin.png" id="31_qqc40"]
-[ext_resource type="Texture2D" uid="uid://bxg8puam3kfuq" path="res://scenes/level/Orange liqueur.png" id="32_twafk"]
+[ext_resource type="Texture2D" uid="uid://b8xwp5atdpycn" path="res://scenes/ingredient/assets/Egg1.png" id="6_vyaxp"]
+[ext_resource type="Texture2D" uid="uid://jb3qkrcwvm50" path="res://scenes/ingredient/assets/Ice1.png" id="8_fji6e"]
+[ext_resource type="Texture2D" uid="uid://b8yrss00sf05h" path="res://scenes/ingredient/assets/Egg2.png" id="8_vpbv1"]
+[ext_resource type="Texture2D" uid="uid://dxy5n777emqsk" path="res://scenes/ingredient/assets/Cola1.png" id="9_up270"]
+[ext_resource type="Texture2D" uid="uid://c27q2edk2quft" path="res://scenes/ingredient/assets/Ice2.png" id="10_hwswy"]
+[ext_resource type="Texture2D" uid="uid://dfycu8cba2qj7" path="res://scenes/ingredient/assets/Vodka2.png" id="10_yqjt1"]
+[ext_resource type="Texture2D" uid="uid://cnvbfdnhlhkev" path="res://scenes/ingredient/assets/Cola2.png" id="12_xq8jx"]
+[ext_resource type="Texture2D" uid="uid://donmyee50djaq" path="res://scenes/ingredient/assets/mint.png" id="13_bk6r5"]
+[ext_resource type="Texture2D" uid="uid://b6u88oriy128n" path="res://scenes/ingredient/assets/Vodka1.png" id="13_rajsc"]
+[ext_resource type="Texture2D" uid="uid://75ndwv6pyb8d" path="res://scenes/ingredient/assets/lime.png" id="15_hv44i"]
+[ext_resource type="Texture2D" uid="uid://dirxa8e6blepo" path="res://scenes/ingredient/assets/orange.png" id="16_u7h24"]
+[ext_resource type="Texture2D" uid="uid://babdpe34rrks4" path="res://scenes/ingredient/assets/Sugar cube.png" id="17_3lfpp"]
+[ext_resource type="Texture2D" uid="uid://cgvvr1p07b0mt" path="res://scenes/ingredient/assets/GingerBeer1.png" id="17_homn5"]
+[ext_resource type="Texture2D" uid="uid://bb35fulcbmrvs" path="res://scenes/ingredient/assets/GingerBeer2.png" id="18_jn32j"]
+[ext_resource type="Texture2D" uid="uid://4eulekl50wgm" path="res://scenes/ingredient/assets/mint2.png" id="19_eabdl"]
+[ext_resource type="Texture2D" uid="uid://cibvwsxfbwwdv" path="res://scenes/ingredient/assets/cherry.png" id="19_wdam0"]
+[ext_resource type="Texture2D" uid="uid://5a7hkber0r6c" path="res://scenes/ingredient/assets/LiquidSunlight1.png" id="21_e1oq8"]
+[ext_resource type="Texture2D" uid="uid://bjx1khyded0n1" path="res://scenes/ingredient/assets/lemon.png" id="21_lhju0"]
+[ext_resource type="Texture2D" uid="uid://caswsjxwh682j" path="res://scenes/ingredient/assets/LiquidSunlight2.png" id="22_xp31x"]
+[ext_resource type="Texture2D" uid="uid://bgfe24mmh275d" path="res://scenes/ingredient/assets/whisky.png" id="23_1vjp5"]
+[ext_resource type="Texture2D" uid="uid://blhhiiha7y54c" path="res://scenes/ingredient/assets/orange2.png" id="23_skldu"]
+[ext_resource type="Texture2D" uid="uid://eckrqqwbmlb0" path="res://scenes/ingredient/assets/Bitters.png" id="24_iwff1"]
+[ext_resource type="Texture2D" uid="uid://cq41pmten7ssm" path="res://scenes/ingredient/assets/lime2.png" id="25_gx62g"]
+[ext_resource type="Texture2D" uid="uid://cgek3diyp1as7" path="res://scenes/ingredient/assets/star leaf Bitters.png" id="25_rjr4d"]
+[ext_resource type="Texture2D" uid="uid://ckyxi0ap37mne" path="res://scenes/ingredient/assets/rum.png" id="26_0cjhe"]
+[ext_resource type="Texture2D" uid="uid://cvg40kelaohq6" path="res://scenes/ingredient/assets/fey wine.png" id="31_2mgv3"]
+[ext_resource type="Texture2D" uid="uid://df50dpkd4xmnv" path="res://scenes/level/drink-assets/moongin.png" id="31_qqc40"]
+[ext_resource type="Texture2D" uid="uid://bvh1hnfx1dq7w" path="res://scenes/ingredient/assets/rum_2.png" id="32_ga04t"]
+[ext_resource type="Texture2D" uid="uid://bxg8puam3kfuq" path="res://scenes/ingredient/assets/Orange liqueur.png" id="32_twafk"]
 [ext_resource type="Texture2D" uid="uid://dldm4lj2yj4hl" path="res://scenes/level/Bubble1.png" id="33_mg06c"]
 [ext_resource type="Texture2D" uid="uid://18rntvvuymqy" path="res://scenes/level/Bubble2.png" id="34_2sryq"]
 [ext_resource type="Texture2D" uid="uid://baykojmwbqkdu" path="res://scenes/level/Bubble3.png" id="35_jma0r"]
-[ext_resource type="Texture2D" uid="uid://dgp1i8lr16owt" path="res://scenes/level/starlight fizz.png" id="35_r612c"]
+[ext_resource type="Texture2D" uid="uid://dgp1i8lr16owt" path="res://scenes/level/drink-assets/starlight fizz.png" id="35_r612c"]
 [ext_resource type="Texture2D" uid="uid://cuopjh84bbxq4" path="res://scenes/level/Bubble4.png" id="36_ckj3a"]
-[ext_resource type="Texture2D" uid="uid://cavo0liya2lq5" path="res://scenes/level/moongin 2.png" id="41_yibhr"]
-[ext_resource type="Texture2D" uid="uid://cmaptof074532" path="res://scenes/level/rocks glass.png" id="44_xl6gb"]
+[ext_resource type="Texture2D" uid="uid://c4x8xm0ahlsh7" path="res://scenes/ingredient/assets/fey wine_2.png" id="39_jcowq"]
+[ext_resource type="Texture2D" uid="uid://bahtteih64stm" path="res://scenes/ingredient/assets/Orange liqueur_2.png" id="41_36rdi"]
+[ext_resource type="Texture2D" uid="uid://cmaptof074532" path="res://scenes/level/drink-assets/rocks glass.png" id="44_xl6gb"]
+[ext_resource type="Texture2D" uid="uid://cavo0liya2lq5" path="res://scenes/level/drink-assets/moongin 2.png" id="41_yibhr"]
+[ext_resource type="Texture2D" uid="uid://cmaptof074532" path="res://scenes/level/drink-assets/rocks glass.png" id="44_xl6gb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_68apu"]
 
@@ -166,7 +169,7 @@ costCents = 50
 
 [node name="Lemon" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(1029, 450)
-texture = ExtResource("14_obxvk")
+texture = ExtResource("21_lhju0")
 hover_texture = ExtResource("21_lhju0")
 costCents = 50
 
@@ -229,6 +232,7 @@ costCents = 600
 position = Vector2(303, 156)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("26_0cjhe")
+hover_texture = ExtResource("32_ga04t")
 costCents = 500
 
 [node name="Elixir of Clarity" parent="." instance=ExtResource("2_2sfis")]
@@ -255,12 +259,14 @@ costCents = 550
 position = Vector2(836, 423)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("31_2mgv3")
+hover_texture = ExtResource("39_jcowq")
 costCents = 400
 
 [node name="Orange Liqueur" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(376, 136)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("32_twafk")
+hover_texture = ExtResource("41_36rdi")
 costCents = 600
 
 [node name="Drink Label" type="Label" parent="."]

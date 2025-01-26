@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://eckrqqwbmlb0"
+path="res://.godot/imported/Bitters.png-39beeabf964fadac42b3b9c3555ffa54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/ingredient/assets/Bitters.png"
+dest_files=["res://.godot/imported/Bitters.png-39beeabf964fadac42b3b9c3555ffa54.ctex"]
 
 [params]
 

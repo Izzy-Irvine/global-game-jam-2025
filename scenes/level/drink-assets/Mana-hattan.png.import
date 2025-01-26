@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://cem7rs5gtobox"
+path="res://.godot/imported/Mana-hattan.png-1298f643daa75cb39e1696529161db35.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/level/drink-assets/Mana-hattan.png"
+dest_files=["res://.godot/imported/Mana-hattan.png-1298f643daa75cb39e1696529161db35.ctex"]
 
 [params]
 

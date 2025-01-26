@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://4eulekl50wgm"
+path="res://.godot/imported/mint2.png-f1e273d19a8b7d503cfaad5d6ac13987.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/ingredient/assets/mint2.png"
+dest_files=["res://.godot/imported/mint2.png-f1e273d19a8b7d503cfaad5d6ac13987.ctex"]
 
 [params]
 

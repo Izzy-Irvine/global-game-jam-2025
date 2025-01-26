@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://b2lxd5w8u08bc"
+path="res://.godot/imported/EyeOfNewt1.png-fa5fdefcc9f44d3f82b8b52ddd3a5abc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/ingredient/assets/EyeOfNewt1.png"
+dest_files=["res://.godot/imported/EyeOfNewt1.png-fa5fdefcc9f44d3f82b8b52ddd3a5abc.ctex"]
 
 [params]
 

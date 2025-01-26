@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://df50dpkd4xmnv"
+path="res://.godot/imported/moongin.png-3b77231de0f821e750d92bd139c57f34.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/level/drink-assets/moongin.png"
+dest_files=["res://.godot/imported/moongin.png-3b77231de0f821e750d92bd139c57f34.ctex"]
 
 [params]
 

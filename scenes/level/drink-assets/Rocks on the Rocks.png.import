@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://bfmiw87qj04vs"
+path="res://.godot/imported/Rocks on the Rocks.png-10c85ad60ce3b46012f10d28819abbe5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/level/drink-assets/Rocks on the Rocks.png"
+dest_files=["res://.godot/imported/Rocks on the Rocks.png-10c85ad60ce3b46012f10d28819abbe5.ctex"]
 
 [params]
 

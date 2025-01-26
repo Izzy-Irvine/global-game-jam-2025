@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://bmhi5c4h53qi5"
+path="res://.godot/imported/whisky_2.png-e7e1c91d62b75d6ed2cf4b79c52c0cfc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/ingredient/assets/whisky_2.png"
+dest_files=["res://.godot/imported/whisky_2.png-e7e1c91d62b75d6ed2cf4b79c52c0cfc.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://btxqwiy20iiyr"
+path="res://.godot/imported/Astral Old Fashioned.png-fcc7bb4d5f5a62942d03f9b261908c8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/level/drink-assets/Astral Old Fashioned.png"
+dest_files=["res://.godot/imported/Astral Old Fashioned.png-fcc7bb4d5f5a62942d03f9b261908c8b.ctex"]
 
 [params]
 
