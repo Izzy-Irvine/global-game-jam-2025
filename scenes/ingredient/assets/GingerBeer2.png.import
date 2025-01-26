@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://bb35fulcbmrvs"
+path="res://.godot/imported/GingerBeer2.png-155bb379704d95c3f27660c5c79e2709.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/ingredient/assets/GingerBeer2.png"
+dest_files=["res://.godot/imported/GingerBeer2.png-155bb379704d95c3f27660c5c79e2709.ctex"]
 
 [params]
 

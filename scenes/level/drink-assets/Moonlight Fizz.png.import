@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://cop3spnrnbjdl"
+path="res://.godot/imported/Moonlight Fizz.png-729ea666cfc3f446031af6bc54f684cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/level/drink-assets/Moonlight Fizz.png"
+dest_files=["res://.godot/imported/Moonlight Fizz.png-729ea666cfc3f446031af6bc54f684cf.ctex"]
 
 [params]
 

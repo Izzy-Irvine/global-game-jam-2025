@@ -1,10 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://u3523m704uk8"]
+[gd_scene load_steps=5 format=3 uid="uid://dx2o46m8w314d"]
 
 [ext_resource type="Texture2D" uid="uid://caduq8bujag20" path="res://scenes/level/Coin1.png" id="1_nqsi0"]
 
 [sub_resource type="Gradient" id="Gradient_vmlg0"]
 offsets = PackedFloat32Array(0, 0.340164, 1)
-colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_c686w"]
 gradient = SubResource("Gradient_vmlg0")

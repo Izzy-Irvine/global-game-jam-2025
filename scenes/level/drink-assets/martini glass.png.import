@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://c2v0fuwrjer7j"
+path="res://.godot/imported/martini glass.png-ffb1a0b9a39be5f4f155e738b130ec8f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/level/drink-assets/martini glass.png"
+dest_files=["res://.godot/imported/martini glass.png-ffb1a0b9a39be5f4f155e738b130ec8f.ctex"]
 
 [params]
 

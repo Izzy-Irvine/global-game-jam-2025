@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://caswsjxwh682j"
+path="res://.godot/imported/LiquidSunlight2.png-6dc0573b222981368755807d10460136.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/ingredient/assets/LiquidSunlight2.png"
+dest_files=["res://.godot/imported/LiquidSunlight2.png-6dc0573b222981368755807d10460136.ctex"]
 
 [params]
 

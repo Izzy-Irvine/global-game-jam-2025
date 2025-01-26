@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://cgek3diyp1as7"
+path="res://.godot/imported/star leaf Bitters.png-ed090cf7f56146faea843f63a2efd3ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/ingredient/assets/star leaf Bitters.png"
+dest_files=["res://.godot/imported/star leaf Bitters.png-ed090cf7f56146faea843f63a2efd3ae.ctex"]
 
 [params]
 

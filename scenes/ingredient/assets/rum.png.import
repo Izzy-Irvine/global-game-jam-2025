@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://ckyxi0ap37mne"
+path="res://.godot/imported/rum.png-41ffd9f187f3e3e2fcd8d653f9c0725d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/ingredient/assets/rum.png"
+dest_files=["res://.godot/imported/rum.png-41ffd9f187f3e3e2fcd8d653f9c0725d.ctex"]
 
 [params]
 

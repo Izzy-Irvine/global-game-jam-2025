@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://dujgvyga85jcd"
+path="res://.godot/imported/Frost Haven Mule.png-0ba47a34f7ec554b8149fef49a247e30.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/level/drink-assets/Frost Haven Mule.png"
+dest_files=["res://.godot/imported/Frost Haven Mule.png-0ba47a34f7ec554b8149fef49a247e30.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://c4x8xm0ahlsh7"
+path="res://.godot/imported/fey wine_2.png-6c78ce6fc330a46b47d314f65d8a1343.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/ingredient/assets/fey wine_2.png"
+dest_files=["res://.godot/imported/fey wine_2.png-6c78ce6fc330a46b47d314f65d8a1343.ctex"]
 
 [params]
 

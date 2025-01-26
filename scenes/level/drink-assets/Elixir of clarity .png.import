@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqbrt8p6tec8"
-path="res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"
+uid="uid://dy7xjafi1ofeo"
+path="res://.godot/imported/Elixir of clarity .png-40c0ce8cc401d36954040608520ea9b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Bubble bubble title.png"
-dest_files=["res://.godot/imported/Bubble bubble title.png-d56804434df276747fee79a148e66190.ctex"]
+source_file="res://scenes/level/drink-assets/Elixir of clarity .png"
+dest_files=["res://.godot/imported/Elixir of clarity .png-40c0ce8cc401d36954040608520ea9b5.ctex"]
 
 [params]
 
