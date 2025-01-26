@@ -32,7 +32,7 @@ Liquid Moonlight, Egg, Lemon: Moonlight fizz
 [Izzy Irvine (they/them)](https://github.com/Izzy-Irvine) - Part time developer, part time team lead \
 [Sophie Starkey (she/they)](https://github.com/sophiestarkey) - Full time developer \
 [AJ O'Dea (they/them)](https://github.com/AMothcreature) - Full time artist \
-[David (he/him)](https://github.com/Arrowskee) - Full time artist \
+[David Scott (he/him)](https://github.com/Arrowskee) - Full time artist \
 [Charlotte M (she/her)](https://github.com/sticks-stuff) - Part time developer \
 [Min Iles (she/they)](https://github.com/Tominne) - Part time artist
 
