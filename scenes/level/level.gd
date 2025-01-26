@@ -50,7 +50,7 @@ var recipes = {
 		Drink.new("Daiquiri", 1000, load("res://scenes/level/drink-assets/Daiquiri.png")),
 	[$"Elixir of Clarity", $"Mint Leaf", $"Ginger Beer"]: 
 		Drink.new("FrostHaven Mule", 1000, load("res://scenes/level/drink-assets/Frost Haven Mule.png")),
-	[$"Liquid Sunlight", $"Elixir of Clarity", $Rum, $Orange, $Lime, $Orange, $Cherry]: 
+	[$"Liquid Sunlight", $"Elixir of Clarity", $Rum, $Orange, $Lime, $Cherry]: 
 		Drink.new("Sirens Sunrise", 1000, load("res://scenes/level/drink-assets/Sirens sunrise.png")),
 	[$Whisky, $"Starleaf Bitters", $"Sugar Cube"]: 
 		Drink.new("Astral mint", 1000, load("res://scenes/level/drink-assets/Astral Old Fashioned.png")),
