@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=52 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
@@ -18,18 +18,21 @@
 [ext_resource type="Texture2D" uid="uid://cnvbfdnhlhkev" path="res://scenes/ingredient/assets/Cola2.png" id="12_xq8jx"]
 [ext_resource type="Texture2D" uid="uid://donmyee50djaq" path="res://scenes/ingredient/assets/mint.png" id="13_bk6r5"]
 [ext_resource type="Texture2D" uid="uid://b6u88oriy128n" path="res://scenes/ingredient/assets/Vodka1.png" id="13_rajsc"]
-[ext_resource type="Texture2D" uid="uid://bjx1khyded0n1" path="res://scenes/ingredient/assets/lemon.png" id="14_obxvk"]
 [ext_resource type="Texture2D" uid="uid://75ndwv6pyb8d" path="res://scenes/ingredient/assets/lime.png" id="15_hv44i"]
 [ext_resource type="Texture2D" uid="uid://dirxa8e6blepo" path="res://scenes/ingredient/assets/orange.png" id="16_u7h24"]
-[ext_resource type="Texture2D" uid="uid://6u2dm4es5w1e" path="res://scenes/ingredient/assets/Sugar cube.png" id="17_3lfpp"]
+[ext_resource type="Texture2D" uid="uid://babdpe34rrks4" path="res://scenes/ingredient/assets/Sugar cube.png" id="17_3lfpp"]
 [ext_resource type="Texture2D" uid="uid://cgvvr1p07b0mt" path="res://scenes/ingredient/assets/GingerBeer1.png" id="17_homn5"]
 [ext_resource type="Texture2D" uid="uid://bb35fulcbmrvs" path="res://scenes/ingredient/assets/GingerBeer2.png" id="18_jn32j"]
+[ext_resource type="Texture2D" uid="uid://4eulekl50wgm" path="res://scenes/ingredient/assets/mint2.png" id="19_eabdl"]
 [ext_resource type="Texture2D" uid="uid://cibvwsxfbwwdv" path="res://scenes/ingredient/assets/cherry.png" id="19_wdam0"]
 [ext_resource type="Texture2D" uid="uid://5a7hkber0r6c" path="res://scenes/ingredient/assets/LiquidSunlight1.png" id="21_e1oq8"]
+[ext_resource type="Texture2D" uid="uid://bjx1khyded0n1" path="res://scenes/ingredient/assets/lemon.png" id="21_lhju0"]
 [ext_resource type="Texture2D" uid="uid://caswsjxwh682j" path="res://scenes/ingredient/assets/LiquidSunlight2.png" id="22_xp31x"]
 [ext_resource type="Texture2D" uid="uid://bgfe24mmh275d" path="res://scenes/ingredient/assets/whisky.png" id="23_1vjp5"]
-[ext_resource type="Texture2D" uid="uid://dh6al34hu8h4y" path="res://scenes/ingredient/assets/Bitters.png" id="24_iwff1"]
-[ext_resource type="Texture2D" uid="uid://b1mpv654eypgt" path="res://scenes/ingredient/assets/star leaf Bitters.png" id="25_rjr4d"]
+[ext_resource type="Texture2D" uid="uid://blhhiiha7y54c" path="res://scenes/ingredient/assets/orange2.png" id="23_skldu"]
+[ext_resource type="Texture2D" uid="uid://eckrqqwbmlb0" path="res://scenes/ingredient/assets/Bitters.png" id="24_iwff1"]
+[ext_resource type="Texture2D" uid="uid://cq41pmten7ssm" path="res://scenes/ingredient/assets/lime2.png" id="25_gx62g"]
+[ext_resource type="Texture2D" uid="uid://cgek3diyp1as7" path="res://scenes/ingredient/assets/star leaf Bitters.png" id="25_rjr4d"]
 [ext_resource type="Texture2D" uid="uid://ckyxi0ap37mne" path="res://scenes/ingredient/assets/rum.png" id="26_0cjhe"]
 [ext_resource type="Texture2D" uid="uid://cvg40kelaohq6" path="res://scenes/ingredient/assets/fey wine.png" id="31_2mgv3"]
 [ext_resource type="Texture2D" uid="uid://df50dpkd4xmnv" path="res://scenes/level/drink-assets/moongin.png" id="31_qqc40"]
@@ -42,6 +45,7 @@
 [ext_resource type="Texture2D" uid="uid://cuopjh84bbxq4" path="res://scenes/level/Bubble4.png" id="36_ckj3a"]
 [ext_resource type="Texture2D" uid="uid://c4x8xm0ahlsh7" path="res://scenes/ingredient/assets/fey wine_2.png" id="39_jcowq"]
 [ext_resource type="Texture2D" uid="uid://bahtteih64stm" path="res://scenes/ingredient/assets/Orange liqueur_2.png" id="41_36rdi"]
+[ext_resource type="Texture2D" uid="uid://cmaptof074532" path="res://scenes/level/drink-assets/rocks glass.png" id="44_xl6gb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_68apu"]
 
@@ -66,6 +70,11 @@ animations = [{
 "name": &"default",
 "speed": 4.0
 }]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ckxfq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_21466"]
+font_size = 45
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_byejp")
@@ -104,6 +113,7 @@ shape = SubResource("CircleShape2D_vkxgl")
 
 [node name="Bubbles" type="AnimatedSprite2D" parent="."]
 visible = false
+modulate = Color(1, 0.5, 0.5, 1)
 position = Vector2(589, 415)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_of3vd")
@@ -116,6 +126,7 @@ offset_right = 564.0
 offset_bottom = 953.0
 rotation = -1.06989
 scale = Vector2(0.35, 0.35)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ckxfq")
 icon = ExtResource("5_q6lqk")
 flat = true
 script = ExtResource("3_h6y4k")
@@ -148,24 +159,28 @@ texture = ExtResource("8_fji6e")
 hover_texture = ExtResource("10_hwswy")
 costCents = 10
 
-[node name="Mint leaf" parent="." instance=ExtResource("2_2sfis")]
+[node name="Mint Leaf" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(1012, 329)
 texture = ExtResource("13_bk6r5")
+hover_texture = ExtResource("19_eabdl")
 costCents = 50
 
 [node name="Lemon" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(1029, 450)
-texture = ExtResource("14_obxvk")
+texture = ExtResource("21_lhju0")
+hover_texture = ExtResource("21_lhju0")
 costCents = 50
 
 [node name="Orange" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(946, 443)
 texture = ExtResource("16_u7h24")
+hover_texture = ExtResource("23_skldu")
 costCents = 50
 
 [node name="Lime" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(984, 458)
 texture = ExtResource("15_hv44i")
+hover_texture = ExtResource("25_gx62g")
 costCents = 100
 
 [node name="Sugar Cube" parent="." instance=ExtResource("2_2sfis")]
@@ -218,38 +233,48 @@ texture = ExtResource("26_0cjhe")
 hover_texture = ExtResource("32_ga04t")
 costCents = 500
 
-[node name="Elixir of clarity (secretly vodka)" parent="." instance=ExtResource("2_2sfis")]
+[node name="Elixir of Clarity" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(827, 174)
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("13_rajsc")
 hover_texture = ExtResource("10_yqjt1")
 costCents = 400
 
-[node name="Liquid sunlight (secretly Tequila)" parent="." instance=ExtResource("2_2sfis")]
+[node name="Liquid Sunlight" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(758, 188)
 texture = ExtResource("21_e1oq8")
 hover_texture = ExtResource("22_xp31x")
 costCents = 550
 
-[node name="Liquid moonlight (secretly Gin)" parent="." instance=ExtResource("2_2sfis")]
+[node name="Liquid Moonlight" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(439, 186)
 scale = Vector2(0.06, 0.06)
 texture = ExtResource("31_qqc40")
 costCents = 550
 
-[node name="Fey wine (secretly Prosecco)" parent="." instance=ExtResource("2_2sfis")]
+[node name="Fey Wine" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(836, 423)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("31_2mgv3")
 hover_texture = ExtResource("39_jcowq")
 costCents = 400
 
-[node name="Orange liqueur" parent="." instance=ExtResource("2_2sfis")]
+[node name="Orange Liqueur" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(376, 136)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("32_twafk")
 hover_texture = ExtResource("41_36rdi")
 costCents = 600
+
+[node name="Drink Label" type="Label" parent="."]
+visible = false
+offset_left = 217.0
+offset_top = 242.0
+offset_right = 932.0
+offset_bottom = 302.0
+text = "Drink name"
+label_settings = SubResource("LabelSettings_21466")
+horizontal_alignment = 1
 
 [node name="Drink" type="TextureRect" parent="."]
 visible = false
@@ -265,6 +290,23 @@ offset_bottom = 536.0
 grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("35_r612c")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Generic glass" type="TextureRect" parent="."]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 472.0
+offset_top = 325.0
+offset_right = 690.0
+offset_bottom = 536.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("44_xl6gb")
 expand_mode = 1
 stretch_mode = 5
 

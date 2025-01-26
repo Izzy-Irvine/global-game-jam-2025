@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgpoo8xbn5w8c"
-path="res://.godot/imported/Sunlight Spritz.png-c3b4e226d145b6882a66279463b37e51.ctex"
+uid="uid://c1ryd2khef834"
+path="res://.godot/imported/lemon2.png-66eb09418f68f5803168b981cd648829.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/level/drink-assets/Sunlight Spritz.png"
-dest_files=["res://.godot/imported/Sunlight Spritz.png-c3b4e226d145b6882a66279463b37e51.ctex"]
+source_file="res://scenes/level/lemon2.png"
+dest_files=["res://.godot/imported/lemon2.png-66eb09418f68f5803168b981cd648829.ctex"]
 
 [params]
 
