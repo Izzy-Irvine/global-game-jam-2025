@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=51 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
@@ -43,6 +43,7 @@
 [ext_resource type="Texture2D" uid="uid://baykojmwbqkdu" path="res://scenes/level/Bubble3.png" id="35_jma0r"]
 [ext_resource type="Texture2D" uid="uid://dgp1i8lr16owt" path="res://scenes/level/starlight fizz.png" id="35_r612c"]
 [ext_resource type="Texture2D" uid="uid://cuopjh84bbxq4" path="res://scenes/level/Bubble4.png" id="36_ckj3a"]
+[ext_resource type="Texture2D" uid="uid://cavo0liya2lq5" path="res://scenes/level/moongin 2.png" id="41_yibhr"]
 [ext_resource type="Texture2D" uid="uid://cmaptof074532" path="res://scenes/level/rocks glass.png" id="44_xl6gb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_68apu"]
@@ -247,6 +248,7 @@ costCents = 550
 position = Vector2(439, 186)
 scale = Vector2(0.06, 0.06)
 texture = ExtResource("31_qqc40")
+hover_texture = ExtResource("41_yibhr")
 costCents = 550
 
 [node name="Fey Wine" parent="." instance=ExtResource("2_2sfis")]
