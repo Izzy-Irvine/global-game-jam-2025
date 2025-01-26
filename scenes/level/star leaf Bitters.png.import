@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwd2hm18203ea"
-path="res://.godot/imported/star leaf Bitters.png-127aacc81e8ea3423fe06d65ecdbc8b3.ctex"
+uid="uid://b1mpv654eypgt"
+path="res://.godot/imported/star leaf Bitters.png-b2888e6322269bd5f153ea7f5f8f2765.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/level/star leaf Bitters.png"
-dest_files=["res://.godot/imported/star leaf Bitters.png-127aacc81e8ea3423fe06d65ecdbc8b3.ctex"]
+source_file="res://star leaf Bitters.png"
+dest_files=["res://.godot/imported/star leaf Bitters.png-b2888e6322269bd5f153ea7f5f8f2765.ctex"]
 
 [params]
 

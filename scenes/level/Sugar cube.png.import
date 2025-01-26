@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc6ehpjn2ay5l"
-path="res://.godot/imported/Sugar cube.png-fe4af305586861949de352104a6d746a.ctex"
+uid="uid://6u2dm4es5w1e"
+path="res://.godot/imported/Sugar cube.png-ac448d80a9889aac7f3e1508942be7ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/level/Sugar cube.png"
-dest_files=["res://.godot/imported/Sugar cube.png-fe4af305586861949de352104a6d746a.ctex"]
+source_file="res://Sugar cube.png"
+dest_files=["res://.godot/imported/Sugar cube.png-ac448d80a9889aac7f3e1508942be7ef.ctex"]
 
 [params]
 
