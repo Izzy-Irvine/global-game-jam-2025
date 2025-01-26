@@ -41,9 +41,8 @@
 [ext_resource type="Texture2D" uid="uid://dldm4lj2yj4hl" path="res://scenes/level/Bubble1.png" id="33_mg06c"]
 [ext_resource type="Texture2D" uid="uid://18rntvvuymqy" path="res://scenes/level/Bubble2.png" id="34_2sryq"]
 [ext_resource type="Texture2D" uid="uid://baykojmwbqkdu" path="res://scenes/level/Bubble3.png" id="35_jma0r"]
+[ext_resource type="Texture2D" uid="uid://dgp1i8lr16owt" path="res://scenes/level/starlight fizz.png" id="35_r612c"]
 [ext_resource type="Texture2D" uid="uid://cuopjh84bbxq4" path="res://scenes/level/Bubble4.png" id="36_ckj3a"]
-[ext_resource type="Texture2D" uid="uid://bravlefvhsxop" path="res://scenes/level/Fill_rocks glass.png" id="43_vh1ps"]
-[ext_resource type="Texture2D" uid="uid://cmaptof074532" path="res://scenes/level/rocks glass.png" id="44_x3sfc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_68apu"]
 
@@ -157,7 +156,7 @@ texture = ExtResource("8_fji6e")
 hover_texture = ExtResource("10_hwswy")
 costCents = 10
 
-[node name="Mint leaf" parent="." instance=ExtResource("2_2sfis")]
+[node name="Mint Leaf" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(1012, 329)
 texture = ExtResource("13_bk6r5")
 hover_texture = ExtResource("19_eabdl")
@@ -230,32 +229,32 @@ scale = Vector2(0.25, 0.25)
 texture = ExtResource("26_0cjhe")
 costCents = 500
 
-[node name="Elixir of clarity (secretly vodka)" parent="." instance=ExtResource("2_2sfis")]
+[node name="Elixir of Clarity" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(827, 174)
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("13_rajsc")
 hover_texture = ExtResource("10_yqjt1")
 costCents = 400
 
-[node name="Liquid sunlight (secretly Tequila)" parent="." instance=ExtResource("2_2sfis")]
+[node name="Liquid Sunlight" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(758, 188)
 texture = ExtResource("21_e1oq8")
 hover_texture = ExtResource("22_xp31x")
 costCents = 550
 
-[node name="Liquid moonlight (secretly Gin)" parent="." instance=ExtResource("2_2sfis")]
+[node name="Liquid Moonlight" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(439, 186)
 scale = Vector2(0.06, 0.06)
 texture = ExtResource("31_qqc40")
 costCents = 550
 
-[node name="Fey wine (secretly Prosecco)" parent="." instance=ExtResource("2_2sfis")]
+[node name="Fey Wine" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(836, 423)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("31_2mgv3")
 costCents = 400
 
-[node name="Orange liqueur" parent="." instance=ExtResource("2_2sfis")]
+[node name="Orange Liqueur" parent="." instance=ExtResource("2_2sfis")]
 position = Vector2(376, 136)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("32_twafk")
@@ -284,24 +283,7 @@ offset_right = 690.0
 offset_bottom = 536.0
 grow_horizontal = 2
 grow_vertical = 0
-texture = ExtResource("43_vh1ps")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Generic glass" type="TextureRect" parent="."]
-visible = false
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = 472.0
-offset_top = 325.0
-offset_right = 690.0
-offset_bottom = 536.0
-grow_horizontal = 2
-grow_vertical = 0
-texture = ExtResource("44_x3sfc")
+texture = ExtResource("35_r612c")
 expand_mode = 1
 stretch_mode = 5
 
