@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=37 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="Texture2D" uid="uid://uoxqnxqsxgrh" path="res://icon.svg" id="1_d1g14"]
@@ -31,7 +31,9 @@
 [ext_resource type="Texture2D" uid="uid://dwd2hm18203ea" path="res://scenes/level/star leaf Bitters.png" id="25_rjr4d"]
 [ext_resource type="Texture2D" uid="uid://ckyxi0ap37mne" path="res://scenes/level/rum.png" id="26_0cjhe"]
 [ext_resource type="Texture2D" uid="uid://cvg40kelaohq6" path="res://scenes/level/fey wine.png" id="31_2mgv3"]
+[ext_resource type="Texture2D" uid="uid://df50dpkd4xmnv" path="res://scenes/level/moongin.png" id="31_qqc40"]
 [ext_resource type="Texture2D" uid="uid://bxg8puam3kfuq" path="res://scenes/level/Orange liqueur.png" id="32_twafk"]
+[ext_resource type="Texture2D" uid="uid://cjv38h1wwyext" path="res://scenes/level/Fey Summer Spritz.png" id="34_8rmm5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_68apu"]
 
@@ -189,8 +191,9 @@ hover_texture = ExtResource("22_xp31x")
 costCents = 550
 
 [node name="Liquid moonlight (secretly Gin)" parent="." instance=ExtResource("2_2sfis")]
-position = Vector2(104, 176)
-texture = ExtResource("1_d1g14")
+position = Vector2(439, 186)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("31_qqc40")
 costCents = 550
 
 [node name="Fey wine (secretly Prosecco)" parent="." instance=ExtResource("2_2sfis")]
@@ -204,5 +207,11 @@ position = Vector2(376, 136)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("32_twafk")
 costCents = 600
+
+[node name="Drink" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(595, 391)
+scale = Vector2(0.381048, 0.381048)
+texture = ExtResource("34_8rmm5")
 
 [connection signal="pressed" from="Spoon" to="Spoon" method="_on_pressed"]
