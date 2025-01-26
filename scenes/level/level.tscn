@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://buxur252gmntr"]
+[gd_scene load_steps=56 format=3 uid="uid://buxur252gmntr"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_byejp"]
 [ext_resource type="PackedScene" uid="uid://clpee6c07otbj" path="res://scenes/ingredient/ingredient.tscn" id="2_2sfis"]
@@ -35,6 +35,7 @@
 [ext_resource type="Texture2D" uid="uid://cq41pmten7ssm" path="res://scenes/ingredient/assets/lime2.png" id="25_gx62g"]
 [ext_resource type="Texture2D" uid="uid://cgek3diyp1as7" path="res://scenes/ingredient/assets/star leaf Bitters.png" id="25_rjr4d"]
 [ext_resource type="Texture2D" uid="uid://ckyxi0ap37mne" path="res://scenes/ingredient/assets/rum.png" id="26_0cjhe"]
+[ext_resource type="Texture2D" uid="uid://50s37q5t50q4" path="res://scenes/ingredient/assets/cherry2.png" id="28_4bwt1"]
 [ext_resource type="Texture2D" uid="uid://cvg40kelaohq6" path="res://scenes/ingredient/assets/fey wine.png" id="31_2mgv3"]
 [ext_resource type="Texture2D" uid="uid://df50dpkd4xmnv" path="res://scenes/level/drink-assets/moongin.png" id="31_qqc40"]
 [ext_resource type="Texture2D" uid="uid://bvh1hnfx1dq7w" path="res://scenes/ingredient/assets/rum_2.png" id="32_ga04t"]
@@ -211,6 +212,7 @@ position = Vector2(1098, 363)
 rotation = 0.366519
 scale = Vector2(0.285, 0.285)
 texture = ExtResource("19_wdam0")
+hover_texture = ExtResource("28_4bwt1")
 costCents = 10
 
 [node name="Ginger Beer" parent="." instance=ExtResource("2_2sfis")]
